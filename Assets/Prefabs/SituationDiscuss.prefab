@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Should you exorcise this person ?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
+  m_sharedMaterial: {fileID: -4860602689895262444, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -679,8 +679,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
+  m_sharedMaterial: {fileID: -4860602689895262444, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -764,7 +764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2997508512829652487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -911,8 +911,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: No
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
+  m_sharedMaterial: {fileID: -4860602689895262444, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1046,8 +1046,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Bonjour, j'entends des voix, que dois-je faire ?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
+  m_sharedMaterial: {fileID: -4860602689895262444, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
