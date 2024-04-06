@@ -21,6 +21,7 @@ public class TransitionScreen : MonoBehaviour
     [SerializeField] private float timeBetweenLoad = 0f;
     [SerializeField] private float timeToDisappear = 0f;
 
+    public event TransitionScreenEventHandler OnMiddleTransition;
     public event TransitionScreenEventHandler OnEndTransition;
 
     #region Unity Methods
@@ -59,6 +60,8 @@ public class TransitionScreen : MonoBehaviour
         nextScreen.SetActive(true);
 
         currentScreen = nextScreen;
+
+        OnMiddleTransition?.Invoke(this);
 
         StartCoroutine(BetweenLoad());
     }

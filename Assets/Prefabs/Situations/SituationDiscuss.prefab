@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 3012263343455821361}
   - component: {fileID: 7239955536813832940}
   m_Layer: 5
-  m_Name: Person
+  m_Name: Caracter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 2718811359838872015}
   - component: {fileID: 5477426045088022982}
   m_Layer: 5
-  m_Name: '[PersonText]'
+  m_Name: '[CaracterText]'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -838,8 +838,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253aa0ea4f1fab46bcfa42a4f24d505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  person: {fileID: 0}
-  personText: {fileID: 8342939155515633946}
+  caracter: {fileID: 7239955536813832940}
+  caracterText: {fileID: 0}
   yes: {fileID: 7998536789051181047}
   no: {fileID: 4607653987061305816}
   timeToDisplayText: 0
@@ -990,7 +990,7 @@ GameObject:
   - component: {fileID: 4846429728071274512}
   - component: {fileID: 8342939155515633946}
   m_Layer: 5
-  m_Name: PersonText
+  m_Name: CaracterText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

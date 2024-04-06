@@ -9,8 +9,8 @@ using UnityEngine.UI;
 public class SituationDiscuss : MonoBehaviour
 {
     [Header("Objects")]
-    [SerializeField] private Image person = default;
-    [SerializeField] private TextMeshProUGUI personText = default;
+    [SerializeField] private Image caracter = default;
+    [SerializeField] private TextMeshProUGUI caracterText = default;
 
     [SerializeField] private Button yes = default;
     [SerializeField] private Button no = default;
@@ -28,9 +28,9 @@ public class SituationDiscuss : MonoBehaviour
     private void Init(Sprite person, string text)
     {
         TextAppear.OnFinished += TextAppear_OnFinished;
-        TextAppear.AppearProgressively(personText, text, timeToDisplayText);
+        TextAppear.AppearProgressively(caracterText, text, timeToDisplayText);
 
-        this.person.sprite = person;
+        this.caracter.sprite = person;
     }
     #endregion
 
