@@ -1032,14 +1032,15 @@ PrefabInstance:
       objectReference: {fileID: 3321891703937466739}
     - target: {fileID: 7778172941360387367, guid: d1f1fcc174f006844a1ebc0989e7f74b, type: 3}
       propertyPath: m_Name
-      value: SituationDiscuss
+      value: Situation1
       objectReference: {fileID: 0}
     - target: {fileID: 7778172941360387367, guid: d1f1fcc174f006844a1ebc0989e7f74b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1729107193927502925, guid: d1f1fcc174f006844a1ebc0989e7f74b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1f1fcc174f006844a1ebc0989e7f74b, type: 3}

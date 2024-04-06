@@ -12,6 +12,8 @@ public class House
     [HideInInspector] public GameObject exclamation;
 }
 
+public delegate void MapEventHandler(Map sender, House house);
+
 [DisallowMultipleComponent]
 public class Map : MonoBehaviour
 {
@@ -19,6 +21,8 @@ public class Map : MonoBehaviour
     [SerializeField] private Button quit = default;
     [SerializeField] private TitleScreen titleScreen = default;
     [SerializeField] private List<House> houseList = default;
+
+    public event MapEventHandler OnClickHouse;
 
     #region Unity Methods
     private void Awake()
@@ -47,7 +51,7 @@ public class Map : MonoBehaviour
 
     private void ClickOnHouse(House house)
     {
-
+        OnClickHouse?.Invoke(this, house);
     }
 
     private void Quit()
