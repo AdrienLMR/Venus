@@ -27,6 +27,8 @@ public class ManagerSituation3 : MonoBehaviour
 
 		btnBackSituation3.onClickedBtnBack += BtnBackSituation3_onClickedBtnBack;
 		btnBackSituation3.gameObject.SetActive(false);
+
+		gameObject.SetActive(false);
 	}
 
 	private void BtnBackSituation3_onClickedBtnBack(BtnBackSituation3 sender)

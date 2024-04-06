@@ -8,6 +8,8 @@ public class Situation1 : MonoBehaviour
 {
     [Header("Objects")]
     [SerializeField] private Map map = default;
+    [SerializeField] private ManagerSituation2 managerSituation2 = default;
+    [SerializeField] private ManagerSituation3 managerSituation3 = default;
     [SerializeField] private Image caracter = default;
     [SerializeField] private TextMeshProUGUI caracterText = default;
 
@@ -28,16 +30,10 @@ public class Situation1 : MonoBehaviour
         situationTexts.onClick.AddListener(SituationTexts);
     }
 
-    private void Clean()
-    {
-        caracterText.text = string.Empty;
-        caracter.sprite = null;
-        caracter.color = new Color(0, 0, 0, 0);
-    }
-
     public void Init(Sprite caracter)
     {
         this.caracter.sprite = caracter;
+        caracterText.text = string.Empty;
 
         yes.enabled = false;
         no.enabled = false;
@@ -54,15 +50,23 @@ public class Situation1 : MonoBehaviour
     {
         yes.enabled = true;
         no.enabled = true;
-        situationObjects.enabled = true;
-        situationTexts.enabled = true;
+    }
+
+    private void Clean()
+    {
+        caracterText.text = string.Empty;
+        caracter.sprite = null;
+        caracter.color = new Color(0, 0, 0, 0);
     }
     #endregion
 
     #region Buttons
     private void Yes()
     {
-
+        yes.enabled = false;
+        no.enabled = false;
+        situationObjects.enabled = true;
+        situationTexts.enabled = true;
     }
 
     private void No()
@@ -73,12 +77,12 @@ public class Situation1 : MonoBehaviour
 
     private void SituationObjects()
     {
-
+        Transition.TransitionTo(managerSituation2.gameObject);
     }
 
     private void SituationTexts()
     {
-
+        Transition.TransitionTo(managerSituation3.gameObject);
     }
     #endregion
 }

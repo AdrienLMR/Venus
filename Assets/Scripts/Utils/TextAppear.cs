@@ -44,6 +44,7 @@ public class TextAppear : MonoBehaviour
         Instance.CallBackOnFinished = CallBackOnFinished;
 
         Instance.elapsedTime = 0f;
+        Instance.textIndex = 0;
 
         Instance.SetModePlay();
     }

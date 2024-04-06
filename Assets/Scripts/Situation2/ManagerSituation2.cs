@@ -33,6 +33,8 @@ public class ManagerSituation2 : MonoBehaviour
 		}
 
 		btnValidate.onClick.AddListener(onClickValidate);
+
+		gameObject.SetActive(false);
 	}
 
 	private void onClickValidate()

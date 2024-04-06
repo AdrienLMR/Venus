@@ -1084,13 +1084,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   map: {fileID: 0}
+  managerSituation2: {fileID: 0}
+  managerSituation3: {fileID: 0}
   caracter: {fileID: 7239955536813832940}
   caracterText: {fileID: 8342939155515633946}
   yes: {fileID: 7998536789051181047}
   no: {fileID: 4607653987061305816}
   situationObjects: {fileID: 6483013044757105667}
   situationTexts: {fileID: 1010626299533832431}
-  timeToDisplayText: 2
+  timeToDisplayText: 1
 --- !u!1 &8243097027749153477
 GameObject:
   m_ObjectHideFlags: 0
