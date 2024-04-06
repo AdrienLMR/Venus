@@ -1,12 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 [DisallowMultipleComponent]
-public class SituationDiscuss : MonoBehaviour
+public class Situation1 : MonoBehaviour
 {
     [Header("Objects")]
     [SerializeField] private Map map = default;
@@ -15,7 +12,6 @@ public class SituationDiscuss : MonoBehaviour
 
     [SerializeField] private Button yes = default;
     [SerializeField] private Button no = default;
-    [SerializeField] private Button quit = default;
     [SerializeField] private Button situationObjects = default;
     [SerializeField] private Button situationTexts = default;
 
@@ -27,7 +23,6 @@ public class SituationDiscuss : MonoBehaviour
     {
         yes.onClick.AddListener(Yes);
         no.onClick.AddListener(No);
-        quit.onClick.AddListener(Quit);
         situationObjects.onClick.AddListener(SituationObjects);
         situationTexts.onClick.AddListener(SituationTexts);
     }
@@ -41,6 +36,11 @@ public class SituationDiscuss : MonoBehaviour
 
     private void Init(Sprite person, string text)
     {
+        yes.enabled = false;
+        no.enabled = false;
+        situationObjects.enabled = false;
+        situationTexts.enabled = false;
+
         TextAppear.OnFinished += TextAppear_OnFinished;
         TextAppear.AppearProgressively(caracterText, text, timeToDisplayText);
 
@@ -55,11 +55,6 @@ public class SituationDiscuss : MonoBehaviour
     }
 
     private void No()
-    {
-
-    }
-
-    private void Quit()
     {
         Clean();
         Transition.TransitionTo(map.gameObject);
@@ -79,6 +74,11 @@ public class SituationDiscuss : MonoBehaviour
     #region Events
     private void TextAppear_OnFinished(TextAppear sender)
     {
+        yes.enabled = true;
+        no.enabled = true;
+        situationObjects.enabled = true;
+        situationTexts.enabled = true;
+
         TextAppear.OnFinished -= TextAppear_OnFinished;
     }
     #endregion
