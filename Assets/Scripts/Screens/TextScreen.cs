@@ -1,8 +1,7 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+
+public delegate void TextScreenEventHandler(TextScreen sender);
 
 [DisallowMultipleComponent]
 public class TextScreen : MonoBehaviour
@@ -13,6 +12,8 @@ public class TextScreen : MonoBehaviour
     [Header("Values")]
     [SerializeField] private float timeToDisplay = 0f;
 
+    private event TextScreenEventHandler OnFinished;
+
     public void CleanText()
     {
         textMesh.text = string.Empty;
@@ -20,16 +21,13 @@ public class TextScreen : MonoBehaviour
 
     public void BeginText(string text)
     {
-        TextAppear.AppearProgressively(textMesh, text, timeToDisplay);
         TextAppear.OnFinished += TextAppear_OnFinished;
+        TextAppear.AppearProgressively(textMesh, text, timeToDisplay);
     }
 
-    #region Events
     private void TextAppear_OnFinished(TextAppear sender)
     {
         TextAppear.OnFinished -= TextAppear_OnFinished;
-
-        Debug.Log("finished");
+        OnFinished?.Invoke(this);
     }
-    #endregion
 }

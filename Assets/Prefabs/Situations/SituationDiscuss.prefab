@@ -1083,13 +1083,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253aa0ea4f1fab46bcfa42a4f24d505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  map: {fileID: 0}
   caracter: {fileID: 7239955536813832940}
-  caracterText: {fileID: 0}
+  caracterText: {fileID: 8342939155515633946}
   yes: {fileID: 7998536789051181047}
   no: {fileID: 4607653987061305816}
-  quit: {fileID: 0}
-  situationObjects: {fileID: 0}
-  situationTexts: {fileID: 0}
+  quit: {fileID: 4697012123727650523}
+  situationObjects: {fileID: 6483013044757105667}
+  situationTexts: {fileID: 1010626299533832431}
   timeToDisplayText: 0
 --- !u!1 &8243097027749153477
 GameObject:

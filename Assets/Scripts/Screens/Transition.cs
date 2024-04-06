@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public delegate void TransitionScreenEventHandler(TransitionScreen sender);
+public delegate void TransitionScreenEventHandler(Transition sender);
 
 [DisallowMultipleComponent]
-public class TransitionScreen : MonoBehaviour
+public class Transition : MonoBehaviour
 {
+    private static Transition Instance { get; set; } = default;
+
     [Header("Objects")]
     [SerializeField] private Image foreground = default;
     [SerializeField] private GameObject startScreen = default;
@@ -25,17 +27,22 @@ public class TransitionScreen : MonoBehaviour
     public event TransitionScreenEventHandler OnEndTransition;
 
     #region Unity Methods
+    private void Awake()
+    {
+        Instance = this;
+    }
+
     private void Start()
     {
         currentScreen = startScreen;
     }
     #endregion
 
-    public void TransitionTo(GameObject nextScreen)
+    public static void TransitionTo(GameObject nextScreen)
     {
-        this.nextScreen = nextScreen;
+        Instance.nextScreen = nextScreen;
 
-        StartCoroutine(Appear());
+        Instance.StartCoroutine(Instance.Appear());
     }
 
     private IEnumerator Appear()

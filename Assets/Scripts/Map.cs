@@ -16,11 +16,15 @@ public class House
 public class Map : MonoBehaviour
 {
     [Header("Objects")]
+    [SerializeField] private Button quit = default;
+    [SerializeField] private TitleScreen titleScreen = default;
     [SerializeField] private List<House> houseList = default;
 
     #region Unity Methods
     private void Awake()
     {
+        quit.onClick.AddListener(Quit);
+
         House house;
 
         for (int i = 0; i < houseList.Count; i++)
@@ -44,5 +48,11 @@ public class Map : MonoBehaviour
     private void ClickOnHouse(House house)
     {
 
+    }
+
+    private void Quit()
+    {
+        Transition.TransitionTo(titleScreen.gameObject);
+        //LevelManager.Clean
     }
 }
