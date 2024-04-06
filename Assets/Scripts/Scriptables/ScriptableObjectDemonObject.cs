@@ -7,4 +7,5 @@ public class ScriptableObjectDemonObject : ScriptableObject
 {
 	public Sprite sprite = default;
 	public string objectName = default;
+	public string txtDescription = default;
 }
