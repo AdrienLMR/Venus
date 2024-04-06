@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   perso: {fileID: 8135847815277142240}
+  btnValidate: {fileID: 5316327342395658054}
   allDemonObject:
   - {fileID: 4110352199968131409}
   - {fileID: 5914881067277171612}
@@ -271,7 +272,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -50, y: -50}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &8381349869137035833
 CanvasRenderer:
@@ -321,7 +322,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1665574885835458687}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -345,7 +346,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 617eccc03074fb1458ccccb2d8203cc5, type: 3}
   m_PreserveAspect: 0
 --- !u!1 &9219816373763955420
 GameObject:
