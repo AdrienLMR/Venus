@@ -53,6 +53,6 @@ public class Map : MonoBehaviour
     private void Quit()
     {
         Transition.TransitionTo(titleScreen.gameObject);
-        //LevelManager.Clean
+        LevelManager.Clean();
     }
 }
