@@ -14,6 +14,9 @@ public class SituationDiscuss : MonoBehaviour
 
     [SerializeField] private Button yes = default;
     [SerializeField] private Button no = default;
+    [SerializeField] private Button quit = default;
+    [SerializeField] private Button situationObjects = default;
+    [SerializeField] private Button situationTexts = default;
 
     [Header("Values")]
     [SerializeField] private float timeToDisplayText = 0f;
@@ -21,8 +24,11 @@ public class SituationDiscuss : MonoBehaviour
     #region Unity Methods
     private void Awake()
     {
-        yes.onClick.AddListener(SelectYes);
-        no.onClick.AddListener(SelectNo);
+        yes.onClick.AddListener(Yes);
+        no.onClick.AddListener(No);
+        quit.onClick.AddListener(Quit);
+        situationObjects.onClick.AddListener(SituationObjects);
+        situationTexts.onClick.AddListener(SituationTexts);
     }
 
     private void Init(Sprite person, string text)
@@ -35,12 +41,27 @@ public class SituationDiscuss : MonoBehaviour
     #endregion
 
     #region Buttons
-    private void SelectYes()
+    private void Yes()
     {
 
     }
 
-    private void SelectNo()
+    private void No()
+    {
+
+    }
+
+    private void Quit()
+    {
+
+    }
+
+    private void SituationObjects()
+    {
+
+    }
+
+    private void SituationTexts()
     {
 
     }
