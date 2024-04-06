@@ -57,7 +57,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 50
+  m_Spacing: -15
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -73,30 +73,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3087620850691115774}
     m_Modifications:
-    - target: {fileID: 849938971740690361, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 849938971740690361, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 849938971740690361, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 849938971740690361, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 849938971740690361, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 849938971740690361, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3676165713691140186, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -233,14 +209,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookContainerHorizontal (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 7934513259638484360, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: scriptableObjectBook
-      value: 
-      objectReference: {fileID: 11400000, guid: c877c1f7aa5a33e4bb59e9ed13838949, type: 2}
-    - target: {fileID: 7950195614520292300, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: scriptableObjectBook
-      value: 
-      objectReference: {fileID: 11400000, guid: 59c6b39ab1d73a44eaa069cd5c0c68fa, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -259,6 +227,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 3087620850691115774}
     m_Modifications:
+    - target: {fileID: 3329570178196239172, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6223190fd26a5af4a9feeb30521ff7dd, type: 3}
+    - target: {fileID: 3349775839895465216, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9fc18c754e231bc438611e68fc967b85, type: 3}
     - target: {fileID: 3676165713691140186, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -395,14 +371,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookContainerHorizontal
       objectReference: {fileID: 0}
-    - target: {fileID: 7934513259638484360, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: scriptableObjectBook
-      value: 
-      objectReference: {fileID: 11400000, guid: 52bd172951e400d45bd229f6f1f796bf, type: 2}
-    - target: {fileID: 7950195614520292300, guid: 6784261d15bd7a949b609aae9957527b, type: 3}
-      propertyPath: scriptableObjectBook
-      value: 
-      objectReference: {fileID: 11400000, guid: 77e73979f964f2a45a744e669fe98517, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

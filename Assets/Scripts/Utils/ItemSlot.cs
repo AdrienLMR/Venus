@@ -24,8 +24,12 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 
 	virtual protected void OnDropObject(GameObject dragObject)
 	{
+		RectTransform rt = dragObject.GetComponent<RectTransform>();
+
 		dragObject.GetComponent<Dragdrop>().droped = true;
-		dragObject.GetComponent<RectTransform>().anchoredPosition = rectTransform.anchoredPosition;
+		dragObject.GetComponent<RectTransform>().anchoredPosition = /*rectTransform.anchoredPosition*/Vector2.zero;
+		rt.offsetMax = Vector2.zero;
+		rt.offsetMin = Vector2.zero;
 	}
 
 }

@@ -57,7 +57,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 50
+  m_Spacing: -30
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -157,9 +157,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3880031204719055903, guid: 26b7f4ee16f6fb045a436431d1b5b480, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 016c6112844f46b419fffc5fb8907729, type: 3}
     - target: {fileID: 8583624847273702706, guid: 26b7f4ee16f6fb045a436431d1b5b480, type: 3}
       propertyPath: m_Name
-      value: Book
+      value: BookBackground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -263,9 +267,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3880031204719055903, guid: 26b7f4ee16f6fb045a436431d1b5b480, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: af194119692fe6446986dbb667d36009, type: 3}
     - target: {fileID: 8583624847273702706, guid: 26b7f4ee16f6fb045a436431d1b5b480, type: 3}
       propertyPath: m_Name
-      value: Book (1)
+      value: BookBackground
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

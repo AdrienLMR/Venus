@@ -5,18 +5,17 @@ using UnityEngine.EventSystems;
 
 public class Dragdrop : MonoBehaviour, IBeginDragHandler,IEndDragHandler, IDragHandler
 {
-	[SerializeField] private Canvas canvas;
+	public Transform bookFullScreen;
 
 	[HideInInspector]
 	public bool droped = false;
-	[HideInInspector]
-	public Transform bookFullScreen;
 
 	private RectTransform rectTransform;
 	private CanvasGroup canvasGroup;
 	private Vector3 startPosition;
 	private Transform parent;
-	
+	private Canvas canvas;
+
 	private void Awake()
 	{
 		rectTransform = GetComponent<RectTransform>();
@@ -25,7 +24,7 @@ public class Dragdrop : MonoBehaviour, IBeginDragHandler,IEndDragHandler, IDragH
 
 	private void Start()
 	{
-		bookFullScreen = transform.parent;
+		canvas = (Canvas)FindObjectOfType(typeof(Canvas));
 	}
 
 	public void OnBeginDrag(PointerEventData eventData)
@@ -47,9 +46,11 @@ public class Dragdrop : MonoBehaviour, IBeginDragHandler,IEndDragHandler, IDragH
 	public void OnEndDrag(PointerEventData eventData)
 	{
 		canvasGroup.blocksRaycasts = true;
-		rectTransform.anchoredPosition = startPosition;
 
-		if(!droped)
+		if (!droped)
+		{
 			transform.SetParent(parent);
+			rectTransform.anchoredPosition = Vector2.zero;
+		}
 	}
 }

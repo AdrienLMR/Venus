@@ -5,6 +5,7 @@ using UnityEngine;
 public class ItemSlotTxtBook : ItemSlot
 {
 	[SerializeField] private int maxNumberPhrase = 4;
+	[SerializeField] private List<Transform> allContainerTxt = new List<Transform>();
 
 	public static ItemSlotTxtBook Instance;
 
@@ -26,8 +27,13 @@ public class ItemSlotTxtBook : ItemSlot
 
 		IncreaseNumberPhrase(1);
 
+		foreach (var containerTxt in allContainerTxt)
+		{
+			if(containerTxt.childCount == 0)
+				dragObject.transform.SetParent(containerTxt);
+		}
+
 		base.OnDropObject(dragObject);
-		dragObject.transform.SetParent(transform);
 
 		if (actualNumberPhrase >= maxNumberPhrase)
 			Debug.LogWarning("Passe a scene suivante");
