@@ -6,10 +6,11 @@ public class ManagerSituation3 : MonoBehaviour
 {
 	[SerializeField] private List<Book> allBook;
 	[SerializeField] private GameObject bookContainer;
-	[SerializeField] private GameObject fullScreenBook;
 	[SerializeField] private BtnBackSituation3 btnBackSituation3;
 
 	public static ManagerSituation3 managerSituation3 { get; private set; }
+
+	private FullScreenBook fullScreenBook = default;
 
 	private void Awake()
 	{
@@ -31,10 +32,12 @@ public class ManagerSituation3 : MonoBehaviour
 	private void BtnBackSituation3_onClickedBtnBack(BtnBackSituation3 sender)
 	{
 		ActivateBookContainer(true, false);
+		btnBackSituation3.gameObject.SetActive(false);
 	}
 
-	private void Book_onClickedBook(Book sender)
+	private void Book_onClickedBook(Book sender, FullScreenBook fullScreenBook)
 	{
+		this.fullScreenBook = fullScreenBook;
 		ActivateBookContainer(false, true);
 		btnBackSituation3.gameObject.SetActive(true);
 	}
@@ -42,6 +45,6 @@ public class ManagerSituation3 : MonoBehaviour
 	private void ActivateBookContainer(bool activateBookContainer, bool activateFullScreenBook)
 	{
 		bookContainer.SetActive(activateBookContainer);
-		fullScreenBook.SetActive(activateFullScreenBook);
+		fullScreenBook.gameObject.SetActive(activateFullScreenBook);
 	}
 }

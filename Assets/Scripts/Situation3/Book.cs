@@ -5,16 +5,15 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public delegate void OnClickedBook(Book sender);
+public delegate void OnClickedBook(Book sender, FullScreenBook fullScreenBook);
 
 public class Book : MonoBehaviour
 {
-	[SerializeField] private SC_Book scriptableObjectBook;
+	[SerializeField] private FullScreenBook fullScreenBook;
 
 	public event OnClickedBook onClickedBook;
 
 	private Button btn /*{ private get; private set; }*/;
-	private FullScreenBook fullScreenBook;
 
 	private void Awake()
 	{
@@ -25,8 +24,6 @@ public class Book : MonoBehaviour
 	private void Start()
 	{
 		SVGImage image = GetComponent<SVGImage>();
-		image.sprite = scriptableObjectBook.sprite;
-		fullScreenBook = FullScreenBook.FullScreenBookinstance;
 	}
 
 	private void ButtonAddListner()
@@ -36,7 +33,7 @@ public class Book : MonoBehaviour
 
 	private void OnButtonClicked()
 	{
-		fullScreenBook.ChangeText(scriptableObjectBook.txt);
-		onClickedBook?.Invoke(this);
+		//fullScreenBook.ChangeText(scriptableObjectBook.txt);
+		onClickedBook?.Invoke(this, fullScreenBook);
 	}
 }

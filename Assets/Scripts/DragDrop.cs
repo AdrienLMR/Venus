@@ -7,11 +7,15 @@ public class Dragdrop : MonoBehaviour, IBeginDragHandler,IEndDragHandler, IDragH
 {
 	[SerializeField] private Canvas canvas;
 
-	public bool droped;
+	[HideInInspector]
+	public bool droped = false;
+	[HideInInspector]
+	public Transform bookFullScreen;
 
 	private RectTransform rectTransform;
 	private CanvasGroup canvasGroup;
 	private Vector3 startPosition;
+	private Transform parent;
 	
 	private void Awake()
 	{
@@ -19,10 +23,20 @@ public class Dragdrop : MonoBehaviour, IBeginDragHandler,IEndDragHandler, IDragH
 		canvasGroup = GetComponent<CanvasGroup>();
 	}
 
+	private void Start()
+	{
+		bookFullScreen = transform.parent;
+	}
+
 	public void OnBeginDrag(PointerEventData eventData)
 	{
 		canvasGroup.blocksRaycasts = false;
 		startPosition = rectTransform.anchoredPosition;
+		parent = transform.parent;
+		droped = false;
+
+		Canvas canvas = (Canvas)FindObjectOfType(typeof(Canvas));
+		transform.SetParent(canvas.transform);
 	}
 
 	public void OnDrag(PointerEventData eventData)
@@ -34,5 +48,8 @@ public class Dragdrop : MonoBehaviour, IBeginDragHandler,IEndDragHandler, IDragH
 	{
 		canvasGroup.blocksRaycasts = true;
 		rectTransform.anchoredPosition = startPosition;
+
+		if(!droped)
+			transform.SetParent(parent);
 	}
 }

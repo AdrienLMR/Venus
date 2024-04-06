@@ -7,7 +7,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 {
 	private RectTransform rectTransform;
 
-	private void Awake()
+	virtual protected void Awake()
 	{
 		rectTransform = GetComponent<RectTransform>();
 	}
@@ -24,6 +24,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 
 	virtual protected void OnDropObject(GameObject dragObject)
 	{
+		dragObject.GetComponent<Dragdrop>().droped = true;
 		dragObject.GetComponent<RectTransform>().anchoredPosition = rectTransform.anchoredPosition;
 	}
 
