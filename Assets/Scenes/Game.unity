@@ -1246,7 +1246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3712810944538966507, guid: 4d461d0254f19ac41a6a65243f10ce12, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6623076071906570378, guid: 4d461d0254f19ac41a6a65243f10ce12, type: 3}
       propertyPath: titleScreen

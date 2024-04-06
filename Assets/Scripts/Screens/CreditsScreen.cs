@@ -25,16 +25,21 @@ public class CreditsScreen : MonoBehaviour
         SetModeVoid();
     }
 
-    public void Init()
-    {
-        SetModePlay();
-    }
-
     private void Update()
     {
         DoAction();
     }
     #endregion
+
+    private void OnEnable()
+    {
+        SetModePlay();
+    }
+
+    private void OnDisable()
+    {
+        creditsContainer.transform.position = Vector3.zero;
+    }
 
     #region State Machine		
     public void SetModeVoid()
@@ -60,7 +65,6 @@ public class CreditsScreen : MonoBehaviour
 
     private void Quit()
     {
-        creditsContainer.transform.position = Vector3.zero;
         Transition.TransitionTo(titleScreen.gameObject);
     }
 }

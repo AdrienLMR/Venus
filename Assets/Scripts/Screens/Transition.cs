@@ -30,6 +30,7 @@ public class Transition : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        Instance.gameObject.SetActive(false);
     }
 
     private void Start()
@@ -40,6 +41,8 @@ public class Transition : MonoBehaviour
 
     public static void TransitionTo(GameObject nextScreen)
     {
+        Instance.gameObject.SetActive(true);
+
         Instance.nextScreen = nextScreen;
 
         Instance.StartCoroutine(Instance.Appear());
@@ -92,6 +95,8 @@ public class Transition : MonoBehaviour
 
             yield return new WaitForEndOfFrame();
         }
+
+        Instance.gameObject.SetActive(false);
 
         OnEndTransition?.Invoke(this);
     }
