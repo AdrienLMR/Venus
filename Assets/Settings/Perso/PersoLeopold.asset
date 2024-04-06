@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 887e10df6e1f3534488b508c5b6f43ee, type: 3}
+  m_Name: PersoLeopold
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: a9996233041180345bef008808b0c0f8, type: 3}
+  allDemonObject:
+  - {fileID: 11400000, guid: 25d8b14ea4116bf47970c490664d1c8e, type: 2}
+  - {fileID: 11400000, guid: 07d3b63ad88468848842bf56839d350d, type: 2}
+  - {fileID: 11400000, guid: 28de759a78ee6a443a43c2033c9988ed, type: 2}
+  - {fileID: 11400000, guid: cd1ec7d37a2139c4e8edad9127261eae, type: 2}
+  txt: []

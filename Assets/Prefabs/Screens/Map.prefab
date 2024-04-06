@@ -479,19 +479,19 @@ MonoBehaviour:
   titleScreen: {fileID: 0}
   houseList:
   - button: {fileID: 1412866991349209305}
-    key: 0
+    perso: {fileID: 85034920497664157, guid: e1c0482182d654446ae372c5b58e5bd9, type: 3}
     isDone: 0
     exclamation: {fileID: 0}
   - button: {fileID: 3095340518199608937}
-    key: 0
+    perso: {fileID: 85034920497664157, guid: 7fbb09d9b36d27546abc9c3f14153e36, type: 3}
     isDone: 0
     exclamation: {fileID: 0}
   - button: {fileID: 191400996089983918}
-    key: 0
+    perso: {fileID: 85034920497664157, guid: 7e34d2970f78eb746899e0d6cb492eeb, type: 3}
     isDone: 0
     exclamation: {fileID: 0}
   - button: {fileID: 7437320377876191432}
-    key: 0
+    perso: {fileID: 85034920497664157, guid: ddad930654dab2149a6880312bb5335e, type: 3}
     isDone: 0
     exclamation: {fileID: 0}
 --- !u!1 &4282801323692181600
@@ -985,8 +985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -645, y: -140}
-  m_SizeDelta: {x: 375, y: 800}
+  m_AnchoredPosition: {x: -645, y: -160}
+  m_SizeDelta: {x: 375, y: 750}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7272813574954052466
 CanvasRenderer:
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: a9996233041180345bef008808b0c0f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
