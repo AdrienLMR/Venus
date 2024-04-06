@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class House
 {
     public Button button;
-    [HideInInspector] public int key;
+    public Perso perso;
     [HideInInspector] public bool isDone;
     [HideInInspector] public GameObject exclamation;
 }
