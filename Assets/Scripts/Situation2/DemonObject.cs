@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VectorGraphics;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public delegate void OnClickedDemonobject(DemonObject sender);
 public class DemonObject : MonoBehaviour
 {
 	[SerializeField] private SVGImage objectImage;
+	[SerializeField] private TextMeshProUGUI txt;
 
 	public event OnClickedDemonobject onClicked = default;
 
@@ -23,6 +25,7 @@ public class DemonObject : MonoBehaviour
 		objectImage.sprite = scriptableObjectDemonObject.sprite;
 		objectName = scriptableObjectDemonObject.name;
 		image = GetComponent<SVGImage>();
+		txt.text = scriptableObjectDemonObject.txtDescription;
 	}
 
 	public void Selected()
