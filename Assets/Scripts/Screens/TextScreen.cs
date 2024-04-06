@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -19,15 +20,13 @@ public class TextScreen : MonoBehaviour
         textMesh.text = string.Empty;
     }
 
-    public void BeginText(string text)
+    public void BeginText(List<string> text)
     {
-        TextAppear.OnFinished += TextAppear_OnFinished;
-        TextAppear.AppearProgressively(textMesh, text, timeToDisplay);
+        TextAppear.AppearProgressively(textMesh, text, timeToDisplay, EndTextAppear);
     }
 
-    private void TextAppear_OnFinished(TextAppear sender)
+    private void EndTextAppear()
     {
-        TextAppear.OnFinished -= TextAppear_OnFinished;
         OnFinished?.Invoke(this);
     }
 }

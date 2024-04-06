@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,17 +35,27 @@ public class Situation1 : MonoBehaviour
         caracter.color = new Color(0, 0, 0, 0);
     }
 
-    private void Init(Sprite person, string text)
+    public void Init(Sprite caracter)
     {
+        this.caracter.sprite = caracter;
+
         yes.enabled = false;
         no.enabled = false;
         situationObjects.enabled = false;
         situationTexts.enabled = false;
+    }
 
-        TextAppear.OnFinished += TextAppear_OnFinished;
-        TextAppear.AppearProgressively(caracterText, text, timeToDisplayText);
+    public void StartAppear(List<string> text)
+    {
+        TextAppear.AppearProgressively(caracterText, text, timeToDisplayText, EndAppear);
+    }
 
-        this.caracter.sprite = person;
+    private void EndAppear()
+    {
+        yes.enabled = true;
+        no.enabled = true;
+        situationObjects.enabled = true;
+        situationTexts.enabled = true;
     }
     #endregion
 
@@ -68,18 +79,6 @@ public class Situation1 : MonoBehaviour
     private void SituationTexts()
     {
 
-    }
-    #endregion
-
-    #region Events
-    private void TextAppear_OnFinished(TextAppear sender)
-    {
-        yes.enabled = true;
-        no.enabled = true;
-        situationObjects.enabled = true;
-        situationTexts.enabled = true;
-
-        TextAppear.OnFinished -= TextAppear_OnFinished;
     }
     #endregion
 }

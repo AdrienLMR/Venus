@@ -23,8 +23,8 @@ public class Transition : MonoBehaviour
     [SerializeField] private float timeBetweenLoad = 0f;
     [SerializeField] private float timeToDisappear = 0f;
 
-    public event TransitionScreenEventHandler OnMiddleTransition;
-    public event TransitionScreenEventHandler OnEndTransition;
+    private Action CallBackInMiddle;
+    private Action CallBackInEnd;
 
     #region Unity Methods
     private void Awake()
@@ -39,13 +39,27 @@ public class Transition : MonoBehaviour
     }
     #endregion
 
-    public static void TransitionTo(GameObject nextScreen)
+    public static Transition TransitionTo(GameObject nextScreen)
     {
         Instance.gameObject.SetActive(true);
 
         Instance.nextScreen = nextScreen;
 
         Instance.StartCoroutine(Instance.Appear());
+
+        return Instance;
+    }
+
+    public Transition AddCallbackInMiddle(Action action)
+    {
+        CallBackInMiddle = action;
+        return this;
+    }
+
+    public Transition AddCallbackInEnd(Action action)
+    {
+        CallBackInEnd = action;
+        return this;
     }
 
     private IEnumerator Appear()
@@ -71,7 +85,8 @@ public class Transition : MonoBehaviour
 
         currentScreen = nextScreen;
 
-        OnMiddleTransition?.Invoke(this);
+        if (CallBackInMiddle != null)
+            CallBackInMiddle();
 
         StartCoroutine(BetweenLoad());
     }
@@ -98,6 +113,10 @@ public class Transition : MonoBehaviour
 
         Instance.gameObject.SetActive(false);
 
-        OnEndTransition?.Invoke(this);
+        if (CallBackInEnd != null)
+            CallBackInEnd();
+
+        CallBackInMiddle = null;
+        CallBackInMiddle = null;
     }
 }

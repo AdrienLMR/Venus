@@ -1,10 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
-public delegate void TextAppearEventHandler(TextAppear sender);
 
 [DisallowMultipleComponent]
 public class TextAppear : MonoBehaviour
@@ -15,13 +12,14 @@ public class TextAppear : MonoBehaviour
     private TextMeshProUGUI textMesh = default;
 
     [Header("Values")]
-    private string text = string.Empty;
+    private List<string> text = new List<string>();
     private float timeToDisplay = 0f;
 
     private float elapsedTime = 0f;
 
-    public static event TextAppearEventHandler OnFinished;
+    private int textIndex = 0;
 
+    private Action CallBackOnFinished;
     private Action DoAction;
 
     #region Unity methods
@@ -37,13 +35,15 @@ public class TextAppear : MonoBehaviour
     }
     #endregion
 
-    public static void AppearProgressively(TextMeshProUGUI textMesh, string text, float timeToDisplay)
+    public static void AppearProgressively(TextMeshProUGUI textMesh, List<string> text, float timeToDisplay, Action CallBackOnFinished = null)
     {
         Instance.textMesh = textMesh;
         Instance.text = text;
         Instance.timeToDisplay = timeToDisplay;
 
-        Instance.elapsedTime = 0;
+        Instance.CallBackOnFinished = CallBackOnFinished;
+
+        Instance.elapsedTime = 0f;
 
         Instance.SetModePlay();
     }
@@ -59,6 +59,11 @@ public class TextAppear : MonoBehaviour
         DoAction = DoActionPlay;
     }
 
+    public void SetModeWaitForInput()
+    {
+        DoAction = DoActionWaitForInput;
+    }
+
     private void DoActionVoid() { }
 
     private void DoActionPlay()
@@ -66,12 +71,29 @@ public class TextAppear : MonoBehaviour
         elapsedTime += Time.deltaTime;
 
         float percentage = elapsedTime / timeToDisplay;
-        textMesh.text = text.Substring(0, Mathf.RoundToInt(text.Length * percentage));
+        textMesh.text = text[textIndex].Substring(0, Mathf.RoundToInt(text[textIndex].Length * percentage));
 
         if (percentage >= 1)
         {
-            SetModeVoid();
-            OnFinished?.Invoke(this);
+            if (textIndex < text.Count - 1)
+                SetModeWaitForInput();
+            else
+            {
+                textIndex = 0;
+                SetModeVoid();
+                CallBackOnFinished();
+            }
+        }
+    }
+
+    private void DoActionWaitForInput()
+    {
+        if (Input.anyKeyDown)
+        {
+            elapsedTime = 0f;
+            textMesh.text = string.Empty;
+            textIndex += 1;
+            SetModePlay();
         }
     }
     #endregion

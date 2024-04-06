@@ -18,4 +18,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 07d3b63ad88468848842bf56839d350d, type: 2}
   - {fileID: 11400000, guid: 28de759a78ee6a443a43c2033c9988ed, type: 2}
   - {fileID: 11400000, guid: cd1ec7d37a2139c4e8edad9127261eae, type: 2}
-  txt: []
+  txtIntroduction:
+  - Ceci est un test
+  - Ceci est un test 2
+  - Ceci est un test 3
+  txtExcorsiste: []
