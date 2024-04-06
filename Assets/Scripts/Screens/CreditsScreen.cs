@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class CreditsScreen : MonoBehaviour
 {
     [Header("Objects")]
+    [SerializeField] private TitleScreen titleScreen = default;
     [SerializeField] private GameObject creditsContainer = default;
     [SerializeField] private Button quit = default;
 
@@ -19,12 +20,9 @@ public class CreditsScreen : MonoBehaviour
     #region Unity Methods
     private void Awake()
     {
-        SetModeVoid();
-    }
+        quit.onClick.AddListener(Quit);
 
-    public void Init()
-    {
-        SetModePlay();
+        SetModeVoid();
     }
 
     private void Update()
@@ -32,6 +30,16 @@ public class CreditsScreen : MonoBehaviour
         DoAction();
     }
     #endregion
+
+    private void OnEnable()
+    {
+        SetModePlay();
+    }
+
+    private void OnDisable()
+    {
+        creditsContainer.transform.position = Vector3.zero;
+    }
 
     #region State Machine		
     public void SetModeVoid()
@@ -57,6 +65,6 @@ public class CreditsScreen : MonoBehaviour
 
     private void Quit()
     {
-
+        Transition.TransitionTo(titleScreen.gameObject);
     }
 }

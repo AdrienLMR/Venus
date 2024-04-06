@@ -7,7 +7,7 @@ using UnityEngine;
 public class FullScreenBook : MonoBehaviour
 {
     [SerializeField] private List<TextMeshProUGUI> allTxt = new List<TextMeshProUGUI>();
-    [SerializeField] private SC_Book scriptableObjectBook;
+    [SerializeField] private ScriptableObjectBook scriptableObjectBook;
 
 	public static FullScreenBook FullScreenBookinstance = default;
 

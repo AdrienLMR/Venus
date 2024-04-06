@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +5,9 @@ using UnityEngine.UI;
 public class TitleScreen : MonoBehaviour
 {
     [Header("Objects")]
+    [SerializeField] private Map map = default;
+    [SerializeField] private CreditsScreen creditsScreen = default;
+
     [SerializeField] private Button play = default;
     [SerializeField] private Button credits = default;
     [SerializeField] private Button quit = default;
@@ -23,12 +23,13 @@ public class TitleScreen : MonoBehaviour
 
     private void Play()
     {
-
+        Transition.TransitionTo(map.gameObject);
+        //Start LevelManager
     }
 
     private void Credits()
     {
-
+        Transition.TransitionTo(creditsScreen.gameObject);
     }
 
     private void Quit()

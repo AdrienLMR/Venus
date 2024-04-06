@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class SituationDiscuss : MonoBehaviour
 {
     [Header("Objects")]
+    [SerializeField] private Map map = default;
     [SerializeField] private Image caracter = default;
     [SerializeField] private TextMeshProUGUI caracterText = default;
 
@@ -29,6 +30,13 @@ public class SituationDiscuss : MonoBehaviour
         quit.onClick.AddListener(Quit);
         situationObjects.onClick.AddListener(SituationObjects);
         situationTexts.onClick.AddListener(SituationTexts);
+    }
+
+    private void Clean()
+    {
+        caracterText.text = string.Empty;
+        caracter.sprite = null;
+        caracter.color = new Color(0, 0, 0, 0);
     }
 
     private void Init(Sprite person, string text)
@@ -53,7 +61,8 @@ public class SituationDiscuss : MonoBehaviour
 
     private void Quit()
     {
-
+        Clean();
+        Transition.TransitionTo(map.gameObject);
     }
 
     private void SituationObjects()
@@ -71,8 +80,6 @@ public class SituationDiscuss : MonoBehaviour
     private void TextAppear_OnFinished(TextAppear sender)
     {
         TextAppear.OnFinished -= TextAppear_OnFinished;
-
-        Debug.Log("finished");
     }
     #endregion
 }
