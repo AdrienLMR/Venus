@@ -315,10 +315,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxNumberPhrase: 4
   allContainerTxt:
-  - {fileID: 2638314176649546398}
-  - {fileID: 7716253631663818407}
-  - {fileID: 8458101617810591854}
   - {fileID: 3009619348422198675}
+  - {fileID: 8458101617810591854}
+  - {fileID: 7716253631663818407}
+  - {fileID: 2638314176649546398}
 --- !u!222 &1269964319469946573
 CanvasRenderer:
   m_ObjectHideFlags: 0
