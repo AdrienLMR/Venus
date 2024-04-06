@@ -17,9 +17,9 @@ public class TransitionScreen : MonoBehaviour
     private GameObject nextScreen = default;
 
     [Header("Values")]
-    [SerializeField] private float timeToAppear = default;
-    [SerializeField] private float timeBetweenLoad = default;
-    [SerializeField] private float timeToDisappear = default;
+    [SerializeField] private float timeToAppear = 0f;
+    [SerializeField] private float timeBetweenLoad = 0f;
+    [SerializeField] private float timeToDisappear = 0f;
 
     public event TransitionScreenEventHandler OnEndTransition;
 

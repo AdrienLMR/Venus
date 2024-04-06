@@ -12,19 +12,20 @@ public class TextAppear : MonoBehaviour
     private static TextAppear Instance { get; set; } = default;
 
     [Header("Objects")]
-    private TextMeshProUGUI textMesh;
+    private TextMeshProUGUI textMesh = default;
 
     [Header("Values")]
-    private string text;
-    private float timeToDisplay;
+    private string text = string.Empty;
+    private float timeToDisplay = 0f;
 
-    private float elapsedTime;
+    private float elapsedTime = 0f;
 
     public static event TextAppearEventHandler OnFinished;
+
     private Action DoAction;
 
     #region Unity methods
-    private void Awake()
+    private void Start()
     {
         Instance = this;
         SetModeVoid();

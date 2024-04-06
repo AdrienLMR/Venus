@@ -91,7 +91,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foreground: {fileID: 4547416495578927371}
   startScreen: {fileID: 0}
-  tempScreen: {fileID: 0}
-  timeToAppear: 1
+  timeToAppear: 0.5
   timeBetweenLoad: 0.5
-  timeToDisappear: 1
+  timeToDisappear: 0.5
