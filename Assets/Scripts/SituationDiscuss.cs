@@ -34,6 +34,7 @@ public class SituationDiscuss : MonoBehaviour
     }
     #endregion
 
+    #region Buttons
     private void SelectYes()
     {
 
@@ -43,6 +44,7 @@ public class SituationDiscuss : MonoBehaviour
     {
 
     }
+    #endregion
 
     #region Events
     private void TextAppear_OnFinished(TextAppear sender)
