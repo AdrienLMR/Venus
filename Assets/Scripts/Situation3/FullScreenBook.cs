@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class FullScreenBook : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private List<TextMeshProUGUI> allTxt = new List<TextMeshProUGUI>();
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public static FullScreenBook FullScreenBookinstance = default;
+
+	private void Awake()
+	{
+		if (FullScreenBookinstance != this)
+			FullScreenBookinstance = this;
+
+		gameObject.SetActive(false);
+	}
+
+	public void ChangeText(List<string> newText)
+	{
+		for (int i = 0; i < newText.Count; i++)
+		{
+			allTxt[i].text = newText[i];
+		}
+	}
 }
