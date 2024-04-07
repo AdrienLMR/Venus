@@ -12,4 +12,5 @@ public class ScriptableObjectPerso : ScriptableObject
 	public bool isPosses = false;
 	public List<string> yesHelp = new List<string>();
 	public List<string> noHelp = new List<string>();
+	public string name = string.Empty;
 }
