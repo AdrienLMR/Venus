@@ -1888,6 +1888,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8592493299141870381, guid: d8cf99ed1f0573947917cd7f4a8f81ae, type: 3}
+      propertyPath: map
+      value: 
+      objectReference: {fileID: 3321891703937466739}
     - target: {fileID: 8712869270301408758, guid: d8cf99ed1f0573947917cd7f4a8f81ae, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1977,6 +1981,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8cf99ed1f0573947917cd7f4a8f81ae, type: 3}
+--- !u!114 &6458210024082097978 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8592493299141870381, guid: d8cf99ed1f0573947917cd7f4a8f81ae, type: 3}
+  m_PrefabInstance: {fileID: 6458210024082097977}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e725d20ebd7bf334f9d0662480a646ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7296167848659090649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2081,6 +2096,10 @@ PrefabInstance:
       propertyPath: map
       value: 
       objectReference: {fileID: 3321891703937466739}
+    - target: {fileID: 6124678375202203792, guid: 403ab3d641962e84c97c5938442d3870, type: 3}
+      propertyPath: tutoScreen
+      value: 
+      objectReference: {fileID: 6458210024082097978}
     - target: {fileID: 6124678375202203792, guid: 403ab3d641962e84c97c5938442d3870, type: 3}
       propertyPath: creditsScreen
       value: 

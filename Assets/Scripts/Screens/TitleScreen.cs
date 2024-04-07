@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class TitleScreen : MonoBehaviour
 {
     [Header("Objects")]
-    [SerializeField] private Map map = default;
+    [SerializeField] private TutoScreen tutoScreen = default;
     [SerializeField] private CreditsScreen creditsScreen = default;
 
     [SerializeField] private Button play = default;
@@ -23,8 +23,7 @@ public class TitleScreen : MonoBehaviour
 
     private void Play()
     {
-        Transition.TransitionTo(map.gameObject);
-        //Start LevelManager
+        Transition.TransitionTo(tutoScreen.gameObject).AddCallbackInEnd(tutoScreen.Init);
     }
 
     private void Credits()
