@@ -58,6 +58,7 @@ public class TutoScreen : MonoBehaviour
             Transition.TransitionTo(map.gameObject);
             SetModeVoid();
             textContainer.SetActive(false);
+            textMesh.text = string.Empty;
         }
     }
     #endregion

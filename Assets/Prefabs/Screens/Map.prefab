@@ -495,10 +495,10 @@ MonoBehaviour:
   quit: {fileID: 5827780936306705057}
   titleScreen: {fileID: 0}
   houseList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 6095537527065559562}
+  - {fileID: 2872495235032837259}
+  - {fileID: 2217027076559448481}
+  - {fileID: 8436928010161455438}
 --- !u!1 &4282801323692181600
 GameObject:
   m_ObjectHideFlags: 0
