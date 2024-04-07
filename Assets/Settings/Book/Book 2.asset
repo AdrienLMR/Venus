@@ -18,26 +18,20 @@ MonoBehaviour:
     txt: "Conjuro te, angele Dei, per meam virginitatem, et per hec sanctissima nomina
       Domini nostri Ihesu Christi Messias, Sother, Sabaoth, Emanuel, Adonay, Melchay,
       Melchaym, El, Eloe, Eloym, Gedeon, Usyon, Usye, Ysus, Agla, Anepheyton, Tetragramathon,
-      et per omnem passionem Domini nostri  Je te conjure, ange de Dieu, par ma virginit\xE9
-      et par ces tr\xE8s saints noms de notre Seigneur J\xE9sus-Christ le Messie,
-      Sother, Sabaoth, Emanuel, Adonay, Melchay, Melchaym, El, Eloe, Eloym, Gedeon,
-      Usyon, Usye, Ysus, Agla, Anepheyton,T\xE9tragramathon, et \xE0 travers toute
-      la passion de notre Seigneur."
+      et per omnem passionem Domini nostri \u2192 Je te conjure, ange de Dieu, par
+      ma virginit\xE9 et par ces tr\xE8s saints noms de notre Seigneur J\xE9sus-Christ
+      le Messie, Sother, Sabaoth, Emanuel, Adonay, Melchay, Melchaym, El, Eloe, Eloym,
+      Gedeon, Usyon, Usye, Ysus, Agla, Anepheyton,T\xE9tragramathon, et \xE0 travers
+      toute la passion de notre Seigneur."
   - enumTxt: 1
     txt: "Conjuro te, per Patrem et Filium et Sanctum Spiritum, et per creatorem
       celi et terre et omnia que in eis sunt, et per omnia nomina Domini nostri Ihesu
-      Christi Trinitas, Ayos, Otheos, Yschiros, Athanathos, Sabaoth, Sother, Messyas,
-      Emanuel, Ysus, Eloym, Eloe, Elyon, Eloy, Panthathron, Agla, Yen, Ya, Yava,
-      Gelmasis, Tetragramathon, Yehuhe, Ysir, Osye, Gedion, Gedeon, Thebeon, Anepheyton,
-      Phaneon, Senayon, Arethon, Sanctidagor, Sasaph, Adech, Benediones, Caresdras,
-      Vrande, Sanach, Metubor, Burion  Je te conjure, par le P\xE8re et le Fils et
-      le Saint-Esprit, et par le cr\xE9ateur du ciel et de la terre et de tout ce
-      qui s'y trouve, et par tous les noms de notre Seigneur J\xE9sus-Christ, la
-      Trinit\xE9, Ayos, Otheos, Yschiros, Athanathos, Sabaoth, Sother, Messiah, Emanuel,
-      Ysus, Eloym, Eloe, Elyon, Eloy, Panthathron, Agla, Yen, Ya, Yava, Gelmasis,
-      Tetragramathon, Yehuhe, Ysir, Osye, Gedion, Gedeon, Thebeon, Anepheyton, Phaneon,
-      Senayon, Arethon, Sanctidagor, Sasaph, Adech, Benediones, Caresdras, Vrande,
-      Sanach, Metubor, Burion"
+      Christi Trinitas, Yschiros, Athanathos, Sabaoth, Sother, Messyas, Emanuel,
+      Ysus, Eloym, Panthathron, Yava, Gelmasis, Tetragramathon  Je te conjure, par
+      le P\xE8re et le Fils et le Saint-Esprit, et par le cr\xE9ateur du ciel et
+      de la terre et de tout ce qui s'y trouve, et par tous les noms de notre Seigneur
+      J\xE9sus-Christ, la Trinit\xE9, Yschiros, Athanathos, Sabaoth, Sother, Messiah,
+      Emanuel, Ysus, Eloym, Panthathron, Agla,  Tetragramathon  "
   - enumTxt: 2
     txt: "Exorcizo te, hostis humani generis, in nomine Dei omnipotentis, ut recedas
       ab hoc pretioso divini opificis plasmate. In hoc enim figmento est vera Syon,
@@ -45,5 +39,5 @@ MonoBehaviour:
       au nom de Dieu Tout-Puissant, pour te retirer de ce pr\xE9cieux plasma de l'ouvrier
       divin"
   - enumTxt: 2
-    txt: "OFFICIEL exorcista genuflexus, corde firmo & devoto dicat  L\u2019exorciste
-      doit s\u2019agenouiller avant de dire"
+    txt: "exorcista genuflexus, corde firmo & devoto dicat  L\u2019exorciste doit
+      s\u2019agenouiller avant de dire"

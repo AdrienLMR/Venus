@@ -18,11 +18,23 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a5a6d2d87ddd1524a863ff8e919cf45a, type: 2}
   - {fileID: 11400000, guid: 983dba950cc7546418c6c55fe27a8c8a, type: 2}
   txtIntroduction:
-  - Ceci est un test
-  - Ceci est un test 2
-  - Ceci est un test 3
+  - "\u2014 P\xE8re Salomon : La pauvre m\xE8re de ce petit est venue me voir en
+    pleurs, elle ne comprend pas pourquoi son fils, si intelligent, si doux, devient
+    un v\xE9ritable monstre d\xE8s qu\u2019il commence \xE0 dire les saintes \xE9critures.
+    Selon elle, le D\xE9mon prend possession de son corps, il ne peut pas lire \xE0
+    voix haute, il ne fait que b\xE9gayer\u2026Et quand s\u2019en est trop, il brise
+    et casse tout ce qui est \xE0 port\xE9e: il a tout an\xE9anti dans sa chambre
+    jusqu\u2019\xE0 se blesser, jusqu\u2019au sang\u2026"
+  - "\u2014 L\xE9opold : Hurlement de rage"
+  - "\u2014 P\xE8re Salomon : Je dois aider ce malheureux enfant, il est tourment\xE9,
+    mais est-ce vraiment les d\xE9mons ? Ca peut-\xEAtre vrai comme faux, je dois
+    donner mon verdict. Etudions. "
   isPosses: 1
   yesHelp:
-  - aaa
+  - "\u2014 P\xE8re Salomon : Cette personne me semble poss\xE9d\xE9e, il me faut
+    la sauver\u2026Je vais \xE9tablir mon rituel \xE0 l\u2019aide des documents de
+    mes pr\xE9d\xE9cesseurs mais je dois aussi r\xE9cup\xE9rer l\u2019outil ad\xE9quat\u2026Voyons
+    voir ce que j\u2019ai. "
   noHelp:
-  - aaa
+  - "\u2014 P\xE8re Salomon : Cette personne me semble seulement malade, je reviendrais
+    plus tard mais pas tout de suite, je dois trouver le malheureux, victime de Satan"

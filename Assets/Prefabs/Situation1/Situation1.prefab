@@ -447,7 +447,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 331, y: 0}
-  m_SizeDelta: {x: 603, y: 263}
+  m_SizeDelta: {x: 603, y: 473.33}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &2718811359838872015
 CanvasRenderer:
@@ -746,7 +746,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7632896550624355814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -916,7 +916,7 @@ MonoBehaviour:
   situationObjects: {fileID: 6483013044757105667}
   situationTexts: {fileID: 1010626299533832431}
   excorsismeButton: {fileID: 0}
-  timeToDisplayText: 1
+  timeToDisplayText: 3
 --- !u!1 &8421595755725110620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,8 +1131,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
