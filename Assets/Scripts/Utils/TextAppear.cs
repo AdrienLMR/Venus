@@ -101,7 +101,7 @@ public class TextAppear : MonoBehaviour
             {
                 textIndex = 0;
                 SetModeVoid();
-                CallBackOnFinished();
+                CallBackOnFinished?.Invoke();
             }
         }
     }
