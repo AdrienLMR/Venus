@@ -76,30 +76,12 @@ public class TextAppear : MonoBehaviour
 
         if (percentage >= 1)
         {
-            if (textIndex < text.Count - 1)
-                SetModeWaitForInput();
-            else
-            {
-                textIndex = 0;
-                SetModeVoid();
-                CallBackOnFinished();
-            }
+            SetModeWaitForInput();
         }
-
-        if (Input.anyKeyDown)
+        else if (Input.anyKeyDown)
         {
             textMesh.text = text[textIndex];
-
-            if (textIndex < text.Count - 1)
-            {
-                SetModeWaitForInput();
-            }
-            else
-            {
-                textIndex = 0;
-                SetModeVoid();
-                CallBackOnFinished();
-            }
+            SetModeWaitForInput();
         }
     }
 
@@ -109,8 +91,18 @@ public class TextAppear : MonoBehaviour
         {
             elapsedTime = 0f;
             textMesh.text = string.Empty;
-            textIndex += 1;
-            SetModePlay();
+
+            if (textIndex < text.Count - 1)
+            {
+                textIndex += 1;
+                SetModePlay();
+            }
+            else
+            {
+                textIndex = 0;
+                SetModeVoid();
+                CallBackOnFinished();
+            }
         }
     }
     #endregion

@@ -2,18 +2,26 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public delegate void TextScreenEventHandler(TextScreen sender);
+public delegate void EndScreenEventHandler(EndScreen sender);
 
 [DisallowMultipleComponent]
-public class TextScreen : MonoBehaviour
+public class EndScreen : MonoBehaviour
 {
+    public static EndScreen Instance = default;
+
     [Header("Objects")]
     [SerializeField] private TextMeshProUGUI textMesh = default;
 
     [Header("Values")]
     [SerializeField] private float timeToDisplay = 0f;
 
-    private event TextScreenEventHandler OnFinished;
+    private event EndScreenEventHandler OnFinished;
+
+    private void Awake()
+    {
+        Instance = this;
+        gameObject.SetActive(false);
+    }
 
     public void CleanText()
     {

@@ -8,6 +8,7 @@ public delegate void HouseBtnEventHandler(HouseBtn sender);
 public class HouseBtn : MonoBehaviour
 {
     [SerializeField] public Perso perso;
+    [SerializeField] public Sprite background;
 	[HideInInspector] public bool isDone;
 	[HideInInspector] public GameObject exclamation;
 

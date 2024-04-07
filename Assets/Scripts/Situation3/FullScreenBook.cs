@@ -41,7 +41,7 @@ public class FullScreenBook : MonoBehaviour
 		ChangeText(scriptableObjectBook.txtExcorsiste);
 	}
 
-	private void Reset_()
+	public void Reset_()
 	{
 		Init();
 	}

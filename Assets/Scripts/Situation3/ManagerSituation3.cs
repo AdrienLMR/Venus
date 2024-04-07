@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class ManagerSituation3 : MonoBehaviour
 {
+	[SerializeField] private Image backgroundImage = default;
 	[SerializeField] private List<Book> allBook;
 	[SerializeField] private GameObject bookContainer;
 	[SerializeField] private BtnBackSituation3 btnBackSituation3;
@@ -19,9 +20,11 @@ public class ManagerSituation3 : MonoBehaviour
 	{
 		if(Instance != this)
 			Instance = this;
+
+		gameObject.SetActive(false);
 	}
 
-	private void Start()
+	public void Init(Sprite background)
 	{
 		foreach (var book in allBook)
 		{
@@ -34,6 +37,7 @@ public class ManagerSituation3 : MonoBehaviour
 		btnBackToRoom.onClick.AddListener(BackToRoom);
 
 		gameObject.SetActive(false);
+		backgroundImage.sprite = background;
 	}
 
 	private void BackToRoom()
