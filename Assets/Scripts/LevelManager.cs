@@ -6,15 +6,22 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class LevelManager : MonoBehaviour
 {
+    public static LevelManager Instance = default;
+
     [Header("Objects")]
     [SerializeField] private Map map = default;
     [SerializeField] private Situation1 situation1 = default;
+    [SerializeField] private ManagerSituation2 managerSituation2 = default;
 
-    private Perso currentPerso = default;
+    public Perso currentPerso = default;
+    public DemonObject actualdemonObject = default;
 
     private void Awake()
     {
+        Instance = this;
+
         map.OnClickHouse += Map_OnClickHouse;
+        //managerSituation2.
     }
 
     #region events
