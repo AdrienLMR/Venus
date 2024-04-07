@@ -32,22 +32,22 @@ public class BtnExorcismProcedure : MonoBehaviour
 
 	private bool CheckSentence()
 	{
-		List<string> selectedTxt = ManagerSituation3.Instance.saveTxt;
+		List<ExcorsisteTxt> selectedTxt = ManagerSituation3.Instance.saveTxt;
 		int rightTxt = 0;
 		Perso currentPerso = LevelManager.Instance.currentPerso;
 
-		foreach (var txtSelected in selectedTxt)
-		{
-			foreach (var txtExcorsiste in currentPerso.scriptableObjectPerso.txtExcorsiste)
-			{
-				Debug.Log(txtExcorsiste);
-				Debug.Log(txtSelected);
+		//foreach (var txtSelected in selectedTxt)
+		//{
+		//	foreach (var txtExcorsiste in currentPerso.scriptableObjectPerso.txtExcorsiste)
+		//	{
+		//		Debug.Log(txtExcorsiste);
+		//		Debug.Log(txtSelected);
 
-				if (txtSelected == txtExcorsiste.txt)
-					rightTxt++;
+		//		//if (txtSelected.enumTxt == txtExcorsiste.txt)
+		//			rightTxt++;
 
-			}
-		}
+		//	}
+		//}
 
 		return rightTxt >= numberToSucces;
 	}

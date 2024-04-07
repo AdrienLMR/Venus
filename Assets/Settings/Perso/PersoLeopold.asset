@@ -14,17 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: c8b439e29e600b24db00c7c6c27d6bd8, type: 3}
   allDemonObject:
-  - {fileID: 11400000, guid: 25d8b14ea4116bf47970c490664d1c8e, type: 2}
-  - {fileID: 11400000, guid: 07d3b63ad88468848842bf56839d350d, type: 2}
-  - {fileID: 11400000, guid: 28de759a78ee6a443a43c2033c9988ed, type: 2}
-  - {fileID: 11400000, guid: cd1ec7d37a2139c4e8edad9127261eae, type: 2}
+  - {fileID: 11400000, guid: 3b7023927a17660499f0735c91e2af43, type: 2}
+  - {fileID: 11400000, guid: a5a6d2d87ddd1524a863ff8e919cf45a, type: 2}
+  - {fileID: 11400000, guid: 983dba950cc7546418c6c55fe27a8c8a, type: 2}
   txtIntroduction:
   - Ceci est un test
   - Ceci est un test 2
   - Ceci est un test 3
   txtExcorsiste:
-  - truc muche
-  - papate
-  - coooooooooollllllll
-  - j'adore les patates au jambon et au truc muche
+  - enumTxt: 0
+    txt: 
+  - enumTxt: 0
+    txt: 
+  - enumTxt: 0
+    txt: 
+  - enumTxt: 0
+    txt: 
   isPosses: 1

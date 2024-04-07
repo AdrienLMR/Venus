@@ -293,7 +293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbbe67451a72a2418cdd5440fb9d501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scripatbleObjectPerso: {fileID: 11400000, guid: c10e51c57175bfb4183e6c8b3fe6287f, type: 2}
+  scriptableObjectPerso: {fileID: 0}
 --- !u!1001 &401349813725598527
 PrefabInstance:
   m_ObjectHideFlags: 0

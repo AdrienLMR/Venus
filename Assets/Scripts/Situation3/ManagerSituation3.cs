@@ -9,7 +9,7 @@ public class ManagerSituation3 : MonoBehaviour
 
 	public static ManagerSituation3 Instance { get; private set; }
 
-	public List<string> saveTxt = new List<string>();
+	public List<ExcorsisteTxt> saveTxt = new List<ExcorsisteTxt>();
 
 	private FullScreenBook fullScreenBook = default;
 
@@ -51,7 +51,7 @@ public class ManagerSituation3 : MonoBehaviour
 		fullScreenBook.gameObject.SetActive(activateFullScreenBook);
 	}
 
-	public void SaveText(List<string> saveTxt)
+	public void SaveText(List<ExcorsisteTxt> saveTxt)
 	{
 		this.saveTxt = saveTxt;
 	}

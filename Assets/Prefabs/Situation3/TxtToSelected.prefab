@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2675920759621992205}
   - component: {fileID: 6944029927348065388}
   - component: {fileID: 6001249815203173689}
+  - component: {fileID: 1427370196424123589}
   m_Layer: 5
   m_Name: TxtToSelected
   m_TagString: Untagged
@@ -166,3 +167,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bookFullScreen: {fileID: 0}
   droped: 0
+--- !u!114 &1427370196424123589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3132129062955399165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13b868c071e4e741a2f2cb0f9459c70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  excorsisteText:
+    enumTxt: 0
+    txt: 

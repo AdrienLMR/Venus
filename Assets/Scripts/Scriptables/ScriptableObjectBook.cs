@@ -6,5 +6,5 @@ using UnityEngine;
 public class ScriptableObjectBook : ScriptableObject
 {
 	public Sprite sprite;
-	public List<string> txt = new List<string>();
+	public List<ExcorsisteTxt> txtExcorsiste = new List<ExcorsisteTxt>();
 }

@@ -10,7 +10,7 @@ public class ItemSlotTxtBook : ItemSlot
 
 	public static ItemSlotTxtBook Instance;
 
-	private List<string> txtSave = new List<string>();
+	private List<ExcorsisteTxt> txtSave = new List<ExcorsisteTxt>();
 	private int actualNumberPhrase = 0;
 
 	override protected void Awake()
@@ -22,7 +22,7 @@ public class ItemSlotTxtBook : ItemSlot
 	}
 
 
-	override protected void OnDropObject(GameObject dragObject)
+	override protected void OnDropObject(TxtSelected dragObject)
 	{
 		if (actualNumberPhrase >= maxNumberPhrase)
 			return;
@@ -36,7 +36,7 @@ public class ItemSlotTxtBook : ItemSlot
 		}
 
 		base.OnDropObject(dragObject);
-		txtSave.Add(dragObject.GetComponent<TextMeshProUGUI>().text);
+		txtSave.Add(dragObject.excorsisteText);
 		ManagerSituation3.Instance.SaveText(txtSave);
 	}
 
@@ -46,7 +46,7 @@ public class ItemSlotTxtBook : ItemSlot
 		actualNumberPhrase = Mathf.Clamp(actualNumberPhrase,0, maxNumberPhrase);
 	}
 
-	public void RemoveTxt(string TxtToDelete)
+	public void RemoveTxt(ExcorsisteTxt TxtToDelete)
 	{
 		txtSave.Remove(TxtToDelete);
 		ManagerSituation3.Instance.SaveText(txtSave);
