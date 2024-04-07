@@ -46,7 +46,8 @@ public class TextAppear : MonoBehaviour
         Instance.elapsedTime = 0f;
         Instance.textIndex = 0;
 
-        Instance.SetModePlay();
+        if (text.Count != 0)
+            Instance.SetModePlay();
     }
 
     #region State Machine		
@@ -72,13 +73,10 @@ public class TextAppear : MonoBehaviour
         elapsedTime += Time.deltaTime;
 
         float percentage = elapsedTime / timeToDisplay;
-        textMesh.text = text[textIndex].Substring(0, Mathf.RoundToInt(text[textIndex].Length * percentage));
 
-        if (percentage >= 1)
-        {
-            SetModeWaitForInput();
-        }
-        else if (Input.anyKeyDown)
+        textMesh.text = text[textIndex].Substring(0, Mathf.RoundToInt(text[textIndex].Length * Mathf.Clamp(percentage, 0, 1)));
+
+        if (Input.anyKeyDown || percentage >= 1)
         {
             textMesh.text = text[textIndex];
             SetModeWaitForInput();
@@ -91,17 +89,17 @@ public class TextAppear : MonoBehaviour
         {
             elapsedTime = 0f;
             textMesh.text = string.Empty;
-
-            if (textIndex < text.Count - 1)
-            {
-                textIndex += 1;
-                SetModePlay();
-            }
-            else
+            textIndex += 1;
+            
+            if (textIndex >= text.Count)
             {
                 textIndex = 0;
                 SetModeVoid();
                 CallBackOnFinished?.Invoke();
+            }
+            else
+            {
+                SetModePlay();
             }
         }
     }
