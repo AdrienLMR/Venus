@@ -56,8 +56,6 @@ public class Situation1 : MonoBehaviour
     private void Clean()
     {
         caracterText.text = string.Empty;
-        caracter.sprite = null;
-        caracter.color = new Color(0, 0, 0, 0);
         questionContainer.SetActive(true);
     }
     #endregion
