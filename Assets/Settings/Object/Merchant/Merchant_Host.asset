@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b08aac1a8aaca24d9964361847ce28b, type: 3}
   m_Name: Merchant_Host
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 2850ff6f308272f458a56ae9cb482194, type: 3}
   objectName: Host
   txtDescription: "Corps du Christ, en ing\xE9rer empoisonne le d\xE9mon et purifie
     le corps du poss\xE9d\xE9 de tous maux"

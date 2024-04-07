@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b08aac1a8aaca24d9964361847ce28b, type: 3}
   m_Name: Tobias_Cross
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: b158d3eb1f73a474e893226d46569ac0, type: 3}
   objectName: Cross
   txtDescription: "Prot\xE8ge les lieux de la venue des d\xE9mons, les rejettent
     et leur inflige les douleurs leurs p\xE9ch\xE9s et de leurs vices commis"

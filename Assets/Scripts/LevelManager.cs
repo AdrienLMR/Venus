@@ -10,10 +10,11 @@ public class LevelManager : MonoBehaviour
 
     [Header("Objects")]
     [SerializeField] private Map map = default;
-    [SerializeField] private Situation1 situation1 = default;
+    [SerializeField] public Situation1 situation1 = default;
     [SerializeField] private ManagerSituation2 managerSituation2 = default;
     [SerializeField] private ManagerSituation3 managerSituation3 = default;
     [SerializeField] private List<HouseBtn> houseBtn = new List<HouseBtn>();
+    [SerializeField] public GameObject excorsismeButton;
 
     [HideInInspector] public Perso currentPerso = default;
     [HideInInspector] public DemonObject actualdemonObject = default;
@@ -49,7 +50,8 @@ public class LevelManager : MonoBehaviour
     private void ManagerSituation2_OnValidateObject(ManagerSituation2 sender, DemonObject demonObject)
     {
         actualdemonObject = demonObject;
-        Transition.TransitionTo(managerSituation3.gameObject);
+        excorsismeButton.SetActive(true);
+        Transition.TransitionTo(situation1.gameObject);
     }
     #endregion
 

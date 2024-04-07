@@ -1,11 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManagerSituation3 : MonoBehaviour
 {
 	[SerializeField] private List<Book> allBook;
 	[SerializeField] private GameObject bookContainer;
 	[SerializeField] private BtnBackSituation3 btnBackSituation3;
+	[SerializeField] private Button btnBackToRoom;
 
 	public static ManagerSituation3 Instance { get; private set; }
 
@@ -29,7 +31,15 @@ public class ManagerSituation3 : MonoBehaviour
 		btnBackSituation3.onClickedBtnBack += BtnBackSituation3_onClickedBtnBack;
 		btnBackSituation3.gameObject.SetActive(false);
 
+		btnBackToRoom.onClick.AddListener(BackToRoom);
+
 		gameObject.SetActive(false);
+	}
+
+	private void BackToRoom()
+	{
+		Transition.TransitionTo(LevelManager.Instance.situation1.gameObject);
+		LevelManager.Instance.excorsismeButton.SetActive(true);
 	}
 
 	private void BtnBackSituation3_onClickedBtnBack(BtnBackSituation3 sender)

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b08aac1a8aaca24d9964361847ce28b, type: 3}
   m_Name: Tobias_ColoredMagicStones
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 0c3dd78981f8c8948b1a5e2acd1e25fc, type: 3}
   objectName: ColoredMagicStones
   txtDescription: "Pi\xE9ger les poss\xE9d\xE9s dans un cercle de pierre, faute de
     mieux. "

@@ -18,6 +18,7 @@ public class Situation1 : MonoBehaviour
     [SerializeField] private Button no = default;
     [SerializeField] private Button situationObjects = default;
     [SerializeField] private Button situationTexts = default;
+    [SerializeField] private GameObject excorsismeButton = default;
 
     [Header("Values")]
     [SerializeField] private float timeToDisplayText = 0f;
@@ -40,6 +41,7 @@ public class Situation1 : MonoBehaviour
         no.enabled = false;
         situationObjects.gameObject.SetActive(false);
         situationTexts.gameObject.SetActive(false);
+        excorsismeButton.SetActive(false);
     }
 
     public void StartAppear(List<string> text)
@@ -68,6 +70,7 @@ public class Situation1 : MonoBehaviour
         situationObjects.gameObject.SetActive(true);
         situationTexts.gameObject.SetActive(true);
         questionContainer.SetActive(false);
+        excorsismeButton.SetActive(true);
     }
 
     private void No()
@@ -78,12 +81,14 @@ public class Situation1 : MonoBehaviour
 
     private void SituationObjects()
     {
-        Transition.TransitionTo(managerSituation2.gameObject).AddCallbackInMiddle(Clean);
+        Transition.TransitionTo(managerSituation2.gameObject)/*.AddCallbackInMiddle(Clean)*/;
+        excorsismeButton.SetActive(false);
     }
 
     private void SituationTexts()
     {
-        Transition.TransitionTo(managerSituation3.gameObject).AddCallbackInMiddle(Clean);
+        Transition.TransitionTo(managerSituation3.gameObject)/*.AddCallbackInMiddle(Clean)*/;
+        excorsismeButton.SetActive(false);
     }
     #endregion
 }

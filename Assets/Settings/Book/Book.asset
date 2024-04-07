@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7dcf359f2e707144b8691b2f1a5d8d08, type: 3}
   txtExcorsiste:
-  - enumTxt: 0
+  - enumTxt: 2
     txt: plouf plouf
-  - enumTxt: 0
+  - enumTxt: 2
     txt: tes
-  - enumTxt: 0
+  - enumTxt: 2
     txt: re
-  - enumTxt: 0
+  - enumTxt: 2
     txt: rrrrree

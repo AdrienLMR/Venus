@@ -15,13 +15,18 @@ public class BtnExorcismProcedure : MonoBehaviour
 		btn.onClick.AddListener(DoExorcismProcedure);
 	}
 
+	private void Start()
+	{
+		gameObject.SetActive(false);
+	}
+
 	private void DoExorcismProcedure()
 	{
 		ScriptableObjectPerso scripatbleObjectPerso = LevelManager.Instance.currentPerso.scriptableObjectPerso;
 		DemonObject actualDemonObject = LevelManager.Instance.actualdemonObject;
 		bool isPosses = scripatbleObjectPerso.isPosses;
 
-		if ((!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject) || !CheckSentence())
+		if ((!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject || !CheckSentence()) || actualDemonObject == null)
 		{
 			Debug.Log("C'est pas un possede");
 		}else /*(isPosses && CheckSentence() && actualDemonObject.scriptableObjectDemonObject.rightObject)*/
