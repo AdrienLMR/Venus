@@ -14,7 +14,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 
 	public void OnDrop(PointerEventData eventData)
 	{
-		GameObject dragObject = eventData.pointerDrag;
+		TxtSelected dragObject = eventData.pointerDrag.GetComponent<TxtSelected>();
 
 		if (dragObject != null)
 		{
@@ -22,7 +22,7 @@ public class ItemSlot : MonoBehaviour, IDropHandler
 		}
 	}
 
-	virtual protected void OnDropObject(GameObject dragObject)
+	virtual protected void OnDropObject(TxtSelected dragObject)
 	{
 		RectTransform rt = dragObject.GetComponent<RectTransform>();
 

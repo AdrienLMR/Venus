@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class House
 {
     public Button button;
-    public Perso perso;
+    public GameObject perso;
     [HideInInspector] public bool isDone;
     [HideInInspector] public GameObject exclamation;
 }
@@ -20,7 +20,7 @@ public class Map : MonoBehaviour
     [Header("Objects")]
     [SerializeField] private Button quit = default;
     [SerializeField] private TitleScreen titleScreen = default;
-    [SerializeField] private List<House> houseList = default;
+    [SerializeField] private List<HouseBtn> houseList = default;
 
     public event MapEventHandler OnClickHouse;
 
@@ -28,31 +28,8 @@ public class Map : MonoBehaviour
     private void Awake()
     {
         quit.onClick.AddListener(Quit);
-
-        House house;
-
-        for (int i = 0; i < houseList.Count; i++)
-        {
-            house = houseList[i];
-            house.exclamation = house.button.transform.GetChild(0).gameObject;
-            house.button.onClick.AddListener(() => ClickOnHouse(house));
-        }
-    }
-
-    public void Init()
-    {
-        for (int i = 0; i < houseList.Count; i++)
-        {
-            houseList[i].exclamation.SetActive(!houseList[i].isDone);
-            houseList[i].button.gameObject.SetActive(!houseList[i].isDone);
-        }
     }
     #endregion
-
-    private void ClickOnHouse(House house)
-    {
-        OnClickHouse?.Invoke(this, house);
-    }
 
     private void Quit()
     {

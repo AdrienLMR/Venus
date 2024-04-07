@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ItemSlotBookFullScreen : ItemSlot
@@ -7,7 +8,7 @@ public class ItemSlotBookFullScreen : ItemSlot
 	[SerializeField] private Transform childToAdd = default;
 	[SerializeField] private List<Transform> allContainerText = default;
 
-	override protected void OnDropObject(GameObject dragObject)
+	override protected void OnDropObject(TxtSelected dragObject)
 	{
 		if (dragObject.GetComponent<Dragdrop>().bookFullScreen != childToAdd)
 			return;
@@ -20,5 +21,6 @@ public class ItemSlotBookFullScreen : ItemSlot
 
 		base.OnDropObject(dragObject);
 		ItemSlotTxtBook.Instance.IncreaseNumberPhrase(-1);
+		ItemSlotTxtBook.Instance.RemoveTxt(dragObject.excorsisteText);
 	}
 }

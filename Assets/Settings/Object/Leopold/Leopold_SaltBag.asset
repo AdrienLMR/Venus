@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b08aac1a8aaca24d9964361847ce28b, type: 3}
+  m_Name: Leopold_SaltBag
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: dbdaf3fd8f0aacd4ea568ace0fe5e4a5, type: 3}
+  objectName: SaltBag
+  txtDescription: "Purifier le b\xE9tail ou emp\xEAcher les temp\xEAtes, si la personne
+    poss\xE9d\xE9e provoque des intemp\xE9ries ou le mauvais temps, la malchance
+    et le chaos."
+  rightObject: 0

@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887e10df6e1f3534488b508c5b6f43ee, type: 3}
   m_Name: PersoLouise
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: a9996233041180345bef008808b0c0f8, type: 3}
+  sprite: {fileID: 21300000, guid: 899f9f80044e9e04aa4ac31dee50fb28, type: 3}
   allDemonObject:
-  - {fileID: 11400000, guid: 25d8b14ea4116bf47970c490664d1c8e, type: 2}
-  - {fileID: 11400000, guid: 07d3b63ad88468848842bf56839d350d, type: 2}
-  - {fileID: 11400000, guid: 28de759a78ee6a443a43c2033c9988ed, type: 2}
-  - {fileID: 11400000, guid: cd1ec7d37a2139c4e8edad9127261eae, type: 2}
+  - {fileID: 11400000, guid: e1b883c660b0fa342a35512709e42688, type: 2}
+  - {fileID: 11400000, guid: b38abf93880aa3744ab7aa0645697b26, type: 2}
+  - {fileID: 11400000, guid: 0d11960a8e4b5ef4aaa39f70e50c7e32, type: 2}
   txtIntroduction:
   - Ceci est un test
   - Ceci est un test 2
   - Ceci est un test 3
   txtExcorsiste: []
+  isPosses: 0

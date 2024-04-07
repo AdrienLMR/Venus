@@ -21,17 +21,28 @@ public class FullScreenBook : MonoBehaviour
 
 	private void Start()
 	{
-		ChangeText(scriptableObjectBook.txt);
-
-		SVGImage image = GetComponent<SVGImage>();
-		image.sprite = scriptableObjectBook.sprite;
+		Init();
 	}
 
-	public void ChangeText(List<string> newText)
+
+	public void ChangeText(List<ExcorsisteTxt> newText)
 	{
 		for (int i = 0; i < newText.Count; i++)
 		{
-			allTxt[i].text = newText[i];
+			allTxt[i].text = newText[i].txt;
+			allTxt[i].GetComponent<TxtSelected>().excorsisteText = newText[i];
 		}
+	}
+
+	private void Init()
+	{
+		SVGImage image = GetComponent<SVGImage>();
+		image.sprite = scriptableObjectBook.sprite;
+		ChangeText(scriptableObjectBook.txtExcorsiste);
+	}
+
+	public void Reset_()
+	{
+		Init();
 	}
 }

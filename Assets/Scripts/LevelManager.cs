@@ -10,48 +10,66 @@ public class LevelManager : MonoBehaviour
 
     [Header("Objects")]
     [SerializeField] private Map map = default;
-    [SerializeField] private Situation1 situation1 = default;
+    [SerializeField] public Situation1 situation1 = default;
     [SerializeField] private ManagerSituation2 managerSituation2 = default;
     [SerializeField] private ManagerSituation3 managerSituation3 = default;
+    [SerializeField] private BtnExorcismProcedure btnExorcismProcedure = default;
+    [SerializeField] private List<HouseBtn> houseBtn = new List<HouseBtn>();
+    [SerializeField] public GameObject excorsismeButton;
 
     [HideInInspector] public Perso currentPerso = default;
     [HideInInspector] public DemonObject actualdemonObject = default;
+    [HideInInspector] public HouseBtn house = default;
 
     private void Awake()
     {
         Instance = this;
 
-        map.OnClickHouse += Map_OnClickHouse;
+		foreach (var houseBtn in houseBtn)
+		{
+			houseBtn.onClickHouse += HouseBtn_onClickHouse;
+		}
+
         managerSituation2.OnValidateObject += ManagerSituation2_OnValidateObject;
     }
 
-    #region events
-    private void Map_OnClickHouse(Map sender, House house)
-    {
-        currentPerso = house.perso;
+	private void HouseBtn_onClickHouse(HouseBtn sender)
+	{
+        house = sender;
+        currentPerso = sender.perso.GetComponent<Perso>();
         Transition.TransitionTo(situation1.gameObject).AddCallbackInMiddle(InitSituation1).AddCallbackInEnd(StartSituation1);
+        ManagerSituation2.Instance.Init(currentPerso.scriptableObjectPerso, house.background);
     }
 
+	#region Events
     private void ManagerSituation2_OnValidateObject(ManagerSituation2 sender, DemonObject demonObject)
     {
         actualdemonObject = demonObject;
-        Transition.TransitionTo(managerSituation3.gameObject);
+        excorsismeButton.SetActive(true);
+        Transition.TransitionTo(managerSituation3.gameObject).AddCallbackInMiddle(InitSituation3);
     }
     #endregion
 
     private void InitSituation1()
     {
-        situation1.Init(currentPerso.scripatbleObjectPerso.sprite);
+        situation1.Init(currentPerso.scriptableObjectPerso.sprite, house.background);
     }
 
     private void StartSituation1()
     {
-        situation1.StartAppear(currentPerso.scripatbleObjectPerso.txtIntroduction);
+        situation1.StartAppear(currentPerso.scriptableObjectPerso.txtIntroduction);
+    }
+
+    private void InitSituation3()
+    {
+        managerSituation3.Init(house.background);
     }
 
     public static void Clean()
     {
+        Instance.house = null;
         Instance.currentPerso = null;
         Instance.actualdemonObject = null;
+        Instance.btnExorcismProcedure.gameObject.SetActive(false);
     }
 }

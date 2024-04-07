@@ -7,6 +7,7 @@ public delegate void ManagerSituation2EventHandler(ManagerSituation2 sender, Dem
 
 public class ManagerSituation2 : MonoBehaviour
 {
+	[SerializeField] private Image backgroundImage = default;
 	[SerializeField] private Perso perso = default;
 	[SerializeField] private Button btnValidate = default;
 	[SerializeField] private List<DemonObject> allDemonObject = new List<DemonObject>();
@@ -25,20 +26,25 @@ public class ManagerSituation2 : MonoBehaviour
 
 	private void Start()
 	{
-		perso.Init();
+		gameObject.SetActive(false);
+	}
+
+	public void Init(ScriptableObjectPerso scriptableObject, Sprite background)
+	{
+		perso.Init(scriptableObject);
 
 		for (int i = 0; i < allDemonObject.Count; i++)
 		{
 			DemonObject demonObject = allDemonObject[i];
 
 			demonObject.onClicked += DemonObject_onClicked;
-			demonObject.scriptableObjectDemonObject = perso.scripatbleObjectPerso.allDemonObject[i];
+			demonObject.scriptableObjectDemonObject = perso.scriptableObjectPerso.allDemonObject[i];
 			demonObject.Init();
 		}
 
-		btnValidate.onClick.AddListener(OnClickValidate);
+		backgroundImage.sprite = background;
 
-		gameObject.SetActive(false);
+		btnValidate.onClick.AddListener(OnClickValidate);
 	}
 
 	private void OnClickValidate()
@@ -57,8 +63,5 @@ public class ManagerSituation2 : MonoBehaviour
 		}
 	}
 
-	public void Reset_()
-	{
-
-	}
+	
 }

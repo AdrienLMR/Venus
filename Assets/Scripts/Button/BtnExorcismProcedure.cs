@@ -7,45 +7,69 @@ public class BtnExorcismProcedure : MonoBehaviour
 {
 	[SerializeField] private int numberToSucces = 3;
 
+	[SerializeField] private List<string> textWin = new List<string>();
+	[SerializeField] private List<string> textLose = new List<string>();
+
     private Button btn;
 
 	private void Awake()
 	{
 		btn = GetComponent<Button>();
 		btn.onClick.AddListener(DoExorcismProcedure);
+		gameObject.SetActive(false);
+	}
+
+	private void Start()
+	{
+		gameObject.SetActive(false);
 	}
 
 	private void DoExorcismProcedure()
 	{
-		ScriptableObjectPerso scripatbleObjectPerso = LevelManager.Instance.currentPerso.scripatbleObjectPerso;
+		ScriptableObjectPerso scripatbleObjectPerso = LevelManager.Instance.currentPerso.scriptableObjectPerso;
 		DemonObject actualDemonObject = LevelManager.Instance.actualdemonObject;
 		bool isPosses = scripatbleObjectPerso.isPosses;
 
-		if (!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject || CheckSentence())
+		if ((!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject || !CheckSentence()) || actualDemonObject == null)
 		{
-			Debug.Log("C'est pas un possede");
-		}else if (isPosses && CheckSentence() && actualDemonObject.scriptableObjectDemonObject.rightObject)
+			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(true));
+		}else /*(isPosses && CheckSentence() && actualDemonObject.scriptableObjectDemonObject.rightObject)*/
 		{
-			Debug.Log("T'as reussi");
+			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(false));
 		}
+
+		FullScreenBook.FullScreenBookinstance.Reset_();
+		ItemSlotTxtBook.Instance.Reset_();
+		ManagerSituation3.Instance.Reset_();
+	}
+
+	private void SendExorcismText(bool win)
+    {
+		EndScreen.Instance.BeginText(win ? textWin : textLose);
 	}
 
 	private bool CheckSentence()
 	{
-		List<string> selectedTxt = ManagerSituation3.Instance.saveTxt;
-		int rightTxt = 0;
-		Perso currentPerso = LevelManager.Instance.currentPerso;
+		List<ExcorsisteTxt> selectedTxt = ManagerSituation3.Instance.saveTxt;
+		int officiel = 0;
+		int proscrit = 0;
+		int bullshit = 0;
 
 		foreach (var txtSelected in selectedTxt)
 		{
-			foreach (var txtExcorsiste in currentPerso.scripatbleObjectPerso.txtExcorsiste)
-			{
-				if (txtSelected == txtExcorsiste)
-					rightTxt++;
-
-			}
+			if (txtSelected.enumTxt == Enum_Txt.OFFICIEL)
+				officiel++;
+			else if (txtSelected.enumTxt == Enum_Txt.PROSCRIT)
+				proscrit++;
+			else
+				bullshit++;
 		}
 
-		return rightTxt >= numberToSucces;
+		if (officiel >= 3)
+			return true;
+		else if (proscrit >= 3)
+			return true;
+		else
+			return false;
 	}
 }

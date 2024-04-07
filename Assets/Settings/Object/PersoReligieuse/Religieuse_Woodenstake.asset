@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b08aac1a8aaca24d9964361847ce28b, type: 3}
-  m_Name: Religieuse_DemonObject 2
+  m_Name: Religieuse_Woodenstake
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: af194119692fe6446986dbb667d36009, type: 3}
-  objectName: 
+  sprite: {fileID: 21300000, guid: 8339eec0a78561444910cd225a3e12d1, type: 3}
+  objectName: Woodenstake
+  txtDescription: "Utile contre les suceurs de sang qui se cachent dans les ombres,
+    les an\xE9antir peut rendre ce bas-monde un peu plus paisible. Et la cendre peut
+    \xEAtre consacr\xE9e, rendue \xE0 la terre"
+  rightObject: 0
