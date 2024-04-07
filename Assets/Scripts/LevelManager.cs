@@ -46,7 +46,7 @@ public class LevelManager : MonoBehaviour
     {
         actualdemonObject = demonObject;
         excorsismeButton.SetActive(true);
-        Transition.TransitionTo(managerSituation3.gameObject).AddCallbackInMiddle(InitSituation3);
+        Transition.TransitionTo(situation1.gameObject)/*.AddCallbackInMiddle(InitSituation3)*/;
     }
     #endregion
 
@@ -60,7 +60,7 @@ public class LevelManager : MonoBehaviour
         situation1.StartAppear(currentPerso.scriptableObjectPerso.txtIntroduction);
     }
 
-    private void InitSituation3()
+    public void InitSituation3()
     {
         managerSituation3.Init(house.background);
     }

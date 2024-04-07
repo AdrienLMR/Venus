@@ -97,7 +97,8 @@ public class Situation1 : MonoBehaviour
 
     private void SituationTexts()
     {
-        Transition.TransitionTo(managerSituation3.gameObject)/*.AddCallbackInMiddle(Clean)*/;
+        Transition.TransitionTo(managerSituation3.gameObject).AddCallbackInMiddle(LevelManager.Instance.InitSituation3);
+        /*Transition.TransitionTo(managerSituation3.gameObject)*//*.AddCallbackInMiddle(Clean)*/;
         excorsismeButton.SetActive(false);
     }
     #endregion

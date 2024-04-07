@@ -21,6 +21,10 @@ public class ManagerSituation3 : MonoBehaviour
 		if(Instance != this)
 			Instance = this;
 
+	}
+
+	private void Start()
+	{
 		gameObject.SetActive(false);
 	}
 
@@ -36,8 +40,8 @@ public class ManagerSituation3 : MonoBehaviour
 
 		btnBackToRoom.onClick.AddListener(BackToRoom);
 
-		gameObject.SetActive(false);
 		backgroundImage.sprite = background;
+		gameObject.SetActive(true);
 	}
 
 	private void BackToRoom()
