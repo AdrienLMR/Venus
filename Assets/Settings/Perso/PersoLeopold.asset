@@ -21,13 +21,8 @@ MonoBehaviour:
   - Ceci est un test
   - Ceci est un test 2
   - Ceci est un test 3
-  txtExcorsiste:
-  - enumTxt: 0
-    txt: 
-  - enumTxt: 0
-    txt: 
-  - enumTxt: 0
-    txt: 
-  - enumTxt: 0
-    txt: 
   isPosses: 1
+  yesHelp:
+  - aaa
+  noHelp:
+  - aaa

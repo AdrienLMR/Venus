@@ -21,5 +21,8 @@ MonoBehaviour:
   - Ceci est un test
   - Ceci est un test 2
   - Ceci est un test 3
-  txtExcorsiste: []
   isPosses: 0
+  yesHelp:
+  - aaa
+  noHelp:
+  - aaa
