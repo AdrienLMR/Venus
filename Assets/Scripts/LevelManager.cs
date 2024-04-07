@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Situation1 situation1 = default;
     [SerializeField] private ManagerSituation2 managerSituation2 = default;
     [SerializeField] private ManagerSituation3 managerSituation3 = default;
+    [SerializeField] private List<HouseBtn> houseBtn = new List<HouseBtn>();
 
     [HideInInspector] public Perso currentPerso = default;
     [HideInInspector] public DemonObject actualdemonObject = default;
@@ -21,14 +22,26 @@ public class LevelManager : MonoBehaviour
     {
         Instance = this;
 
-        map.OnClickHouse += Map_OnClickHouse;
+		//map.OnClickHouse += Map_OnClickHouse;
+
+		foreach (var houseBtn in houseBtn)
+		{
+			houseBtn.onClickHouse += HouseBtn_onClickHouse;
+		}
+
         managerSituation2.OnValidateObject += ManagerSituation2_OnValidateObject;
     }
 
-    #region events
-    private void Map_OnClickHouse(Map sender, House house)
+	private void HouseBtn_onClickHouse(HouseBtn sender)
+	{
+        currentPerso = sender.perso.GetComponent<Perso>();
+        Transition.TransitionTo(situation1.gameObject).AddCallbackInMiddle(InitSituation1).AddCallbackInEnd(StartSituation1);
+    }
+
+	#region events
+	private void Map_OnClickHouse(Map sender, House house)
     {
-        currentPerso = house.perso;
+        currentPerso = house.perso.GetComponent<Perso>();
         Transition.TransitionTo(situation1.gameObject).AddCallbackInMiddle(InitSituation1).AddCallbackInEnd(StartSituation1);
     }
 

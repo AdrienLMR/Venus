@@ -1088,6 +1088,7 @@ MonoBehaviour:
   managerSituation3: {fileID: 0}
   caracter: {fileID: 7239955536813832940}
   caracterText: {fileID: 8342939155515633946}
+  questionContainer: {fileID: 5228072590188020133}
   yes: {fileID: 7998536789051181047}
   no: {fileID: 4607653987061305816}
   situationObjects: {fileID: 6483013044757105667}

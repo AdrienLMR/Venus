@@ -22,4 +22,9 @@ MonoBehaviour:
   - Ceci est un test
   - Ceci est un test 2
   - Ceci est un test 3
-  txtExcorsiste: []
+  txtExcorsiste:
+  - truc muche
+  - papate
+  - coooooooooollllllll
+  - j'adore les patates au jambon et au truc muche
+  isPosses: 1
