@@ -17,13 +17,6 @@ public class GameManager : MonoBehaviour
     [Header("Sounds")]
     [SerializeField] private List<AudioSource> Themes;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        main = true;
-        playOnly(0);
-    }
-
     // Update is called once per frame
     void Update()
     {
