@@ -21,7 +21,7 @@ MonoBehaviour:
   - Ceci est un test
   - Ceci est un test 2
   - Ceci est un test 3
-  isPosses: 0
+  isPosses: 1
   yesHelp:
   - aaa
   noHelp:

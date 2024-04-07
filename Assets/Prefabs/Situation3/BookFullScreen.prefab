@@ -312,6 +312,12 @@ MonoBehaviour:
   - {fileID: 3962760777753124481}
   - {fileID: 720856765430748057}
   scriptableObjectBook: {fileID: 11400000, guid: 52bd172951e400d45bd229f6f1f796bf, type: 2}
+  txtBook: {fileID: 3132129062955399165, guid: 7f751099bb0a0174188e43a60723602f, type: 3}
+  allContainerTxt:
+  - {fileID: 9075534199468060626}
+  - {fileID: 7511232390654624502}
+  - {fileID: 3294639002512898244}
+  - {fileID: 3220743479201875947}
 --- !u!114 &5539264535677190009
 MonoBehaviour:
   m_ObjectHideFlags: 0
