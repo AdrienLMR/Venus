@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9204167767778297079}
   - component: {fileID: 191400996089983918}
   - component: {fileID: 6543125714964063757}
+  - component: {fileID: 2217027076559448481}
   m_Layer: 0
   m_Name: TobiasFarm
   m_TagString: Untagged
@@ -114,6 +115,22 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: e3b3ab4418293af459c0b46a46ca10d9, type: 3}
   m_PreserveAspect: 0
+--- !u!114 &2217027076559448481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147151952828303334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02016b4af6a233c4aa44b457920d0ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perso: {fileID: 85034920497664157, guid: 7e34d2970f78eb746899e0d6cb492eeb, type: 3}
+  isDone: 0
+  exclamation: {fileID: 0}
+  btn: {fileID: 191400996089983918}
 --- !u!1 &696734884245416409
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,22 +495,10 @@ MonoBehaviour:
   quit: {fileID: 5827780936306705057}
   titleScreen: {fileID: 0}
   houseList:
-  - button: {fileID: 1412866991349209305}
-    perso: {fileID: 85034920497664157, guid: e1c0482182d654446ae372c5b58e5bd9, type: 3}
-    isDone: 0
-    exclamation: {fileID: 0}
-  - button: {fileID: 3095340518199608937}
-    perso: {fileID: 85034920497664157, guid: 7fbb09d9b36d27546abc9c3f14153e36, type: 3}
-    isDone: 0
-    exclamation: {fileID: 0}
-  - button: {fileID: 191400996089983918}
-    perso: {fileID: 85034920497664157, guid: 7e34d2970f78eb746899e0d6cb492eeb, type: 3}
-    isDone: 0
-    exclamation: {fileID: 0}
-  - button: {fileID: 7437320377876191432}
-    perso: {fileID: 85034920497664157, guid: ddad930654dab2149a6880312bb5335e, type: 3}
-    isDone: 0
-    exclamation: {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &4282801323692181600
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +587,7 @@ GameObject:
   - component: {fileID: 6256033873685681947}
   - component: {fileID: 7437320377876191432}
   - component: {fileID: 6837557422860399059}
+  - component: {fileID: 8436928010161455438}
   m_Layer: 0
   m_Name: LouiseManor
   m_TagString: Untagged
@@ -684,6 +690,22 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 64322cb63dc634746b9f4115cd600680, type: 3}
   m_PreserveAspect: 0
+--- !u!114 &8436928010161455438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4993994429940035672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02016b4af6a233c4aa44b457920d0ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perso: {fileID: 85034920497664157, guid: ddad930654dab2149a6880312bb5335e, type: 3}
+  isDone: 0
+  exclamation: {fileID: 0}
+  btn: {fileID: 7437320377876191432}
 --- !u!1 &5941215826820272231
 GameObject:
   m_ObjectHideFlags: 0
@@ -772,6 +794,7 @@ GameObject:
   - component: {fileID: 2211259999631477035}
   - component: {fileID: 3095340518199608937}
   - component: {fileID: 6797971882182774816}
+  - component: {fileID: 2872495235032837259}
   m_Layer: 0
   m_Name: EstherChurch
   m_TagString: Untagged
@@ -874,6 +897,22 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: b34ebaa8072ce2e4a8bf4e4c300ac3ec, type: 3}
   m_PreserveAspect: 0
+--- !u!114 &2872495235032837259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6073618679880399469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02016b4af6a233c4aa44b457920d0ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perso: {fileID: 85034920497664157, guid: 7fbb09d9b36d27546abc9c3f14153e36, type: 3}
+  isDone: 0
+  exclamation: {fileID: 0}
+  btn: {fileID: 3095340518199608937}
 --- !u!1 &7143955434801992799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,6 +1077,7 @@ GameObject:
   - component: {fileID: 8715310646427896161}
   - component: {fileID: 212314140141854582}
   - component: {fileID: 1412866991349209305}
+  - component: {fileID: 6095537527065559562}
   m_Layer: 0
   m_Name: LeopoldHouse
   m_TagString: Untagged
@@ -1140,3 +1180,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6095537527065559562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9119097053745739033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02016b4af6a233c4aa44b457920d0ffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  perso: {fileID: 85034920497664157, guid: ddad930654dab2149a6880312bb5335e, type: 3}
+  isDone: 0
+  exclamation: {fileID: 0}
+  btn: {fileID: 1412866991349209305}

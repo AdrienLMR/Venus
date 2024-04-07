@@ -48,4 +48,9 @@ public class ItemSlotTxtBook : ItemSlot
 		actualNumberPhrase += numberToAdd;
 		actualNumberPhrase = Mathf.Clamp(actualNumberPhrase,0, maxNumberPhrase);
 	}
+
+	public void RemoveTxt(string TxtToDelete)
+	{
+		txtSave.Remove(TxtToDelete);
+	}
 }

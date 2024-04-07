@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ItemSlotBookFullScreen : ItemSlot
@@ -20,5 +21,6 @@ public class ItemSlotBookFullScreen : ItemSlot
 
 		base.OnDropObject(dragObject);
 		ItemSlotTxtBook.Instance.IncreaseNumberPhrase(-1);
+		ItemSlotTxtBook.Instance.RemoveTxt(dragObject.GetComponent<TextMeshProUGUI>().text);
 	}
 }

@@ -21,10 +21,10 @@ public class BtnExorcismProcedure : MonoBehaviour
 		DemonObject actualDemonObject = LevelManager.Instance.actualdemonObject;
 		bool isPosses = scripatbleObjectPerso.isPosses;
 
-		if (!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject || CheckSentence())
+		if ((!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject) || !CheckSentence())
 		{
 			Debug.Log("C'est pas un possede");
-		}else if (isPosses && CheckSentence() && actualDemonObject.scriptableObjectDemonObject.rightObject)
+		}else /*(isPosses && CheckSentence() && actualDemonObject.scriptableObjectDemonObject.rightObject)*/
 		{
 			Debug.Log("T'as reussi");
 		}
@@ -40,6 +40,9 @@ public class BtnExorcismProcedure : MonoBehaviour
 		{
 			foreach (var txtExcorsiste in currentPerso.scripatbleObjectPerso.txtExcorsiste)
 			{
+				Debug.Log(txtExcorsiste);
+				Debug.Log(txtSelected);
+
 				if (txtSelected == txtExcorsiste)
 					rightTxt++;
 

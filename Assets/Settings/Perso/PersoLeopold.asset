@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887e10df6e1f3534488b508c5b6f43ee, type: 3}
   m_Name: PersoLeopold
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: c8b439e29e600b24db00c7c6c27d6bd8, type: 3}
+  sprite: {fileID: 21300000, guid: a9996233041180345bef008808b0c0f8, type: 3}
   allDemonObject:
   - {fileID: 11400000, guid: 25d8b14ea4116bf47970c490664d1c8e, type: 2}
   - {fileID: 11400000, guid: 07d3b63ad88468848842bf56839d350d, type: 2}
@@ -22,5 +22,9 @@ MonoBehaviour:
   - Ceci est un test
   - Ceci est un test 2
   - Ceci est un test 3
-  txtExcorsiste: []
-  isPosses: 0
+  txtExcorsiste:
+  - truc muche
+  - papate
+  - coooooooooollllllll
+  - j'adore les patates au jambon et au truc muche
+  isPosses: 1
