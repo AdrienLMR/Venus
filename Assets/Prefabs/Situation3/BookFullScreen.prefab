@@ -318,6 +318,7 @@ MonoBehaviour:
   - {fileID: 7511232390654624502}
   - {fileID: 3294639002512898244}
   - {fileID: 3220743479201875947}
+  verticalLayoutText: {fileID: 1223254697215708686}
 --- !u!114 &5539264535677190009
 MonoBehaviour:
   m_ObjectHideFlags: 0

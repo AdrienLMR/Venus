@@ -36,5 +36,6 @@ public class EndScreen : MonoBehaviour
     private void EndTextAppear()
     {
         OnFinished?.Invoke(this);
+        Transition.TransitionTo(LevelManager.Instance.map.gameObject);
     }
 }

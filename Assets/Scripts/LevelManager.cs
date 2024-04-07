@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
     public static LevelManager Instance = default;
 
     [Header("Objects")]
-    [SerializeField] private Map map = default;
+    [SerializeField] public Map map = default;
     [SerializeField] public Situation1 situation1 = default;
     [SerializeField] private ManagerSituation2 managerSituation2 = default;
     [SerializeField] private ManagerSituation3 managerSituation3 = default;

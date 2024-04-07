@@ -10,6 +10,7 @@ public class FullScreenBook : MonoBehaviour
     [SerializeField] private ScriptableObjectBook scriptableObjectBook;
 	[SerializeField] private GameObject txtBook = default;
 	[SerializeField] private List<GameObject> allContainerTxt = new List<GameObject>();
+	[SerializeField] private GameObject verticalLayoutText = default;
 
 	public static FullScreenBook FullScreenBookinstance = default;
 
@@ -47,7 +48,9 @@ public class FullScreenBook : MonoBehaviour
 
 		foreach (var containerTxt in allContainerTxt)
 		{
-			allTxt.Add(Instantiate(txtBook, containerTxt.transform).GetComponent<TextMeshProUGUI>());
+			GameObject txtToSelected = Instantiate(txtBook, containerTxt.transform);
+			txtToSelected.GetComponent<Dragdrop>().bookFullScreen = verticalLayoutText.transform;
+			allTxt.Add(txtToSelected.GetComponent<TextMeshProUGUI>());
 		}
 
 		SVGImage image = GetComponent<SVGImage>();
