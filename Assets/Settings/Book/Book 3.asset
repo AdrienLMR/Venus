@@ -15,10 +15,23 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 7dcf359f2e707144b8691b2f1a5d8d08, type: 3}
   txtExcorsiste:
   - enumTxt: 2
-    txt: 
+    txt: " \xC9coute donc, esprit impur, car il t'est interdit de blesser l'image
+      de Dieu. Je t'exorcise, ennemi du genre humain, au nom de Dieu Tout-Puissant,
+      pour te retirer de ce pr\xE9cieux plasma de l'ouvrier divin"
   - enumTxt: 0
-    txt: 
+    txt: "Arme ton \xE9p\xE9e comme Dieu arma son bras et fit p\xE9rir l'homme assombri,
+      \xE0 l'\xE2ge de No\xE9. Exorcizo te, inmunde spiritus, in nomine patris et
+      filii et spiritus sancti, ut exeas et recedas ad hoc famulo Deipuisse ton \xE2me
+      se reposer alors que le d\xE9mon br\xFBle sous les p\xE9ch\xE9s et le vice."
   - enumTxt: 0
-    txt: 
-  - enumTxt: 0
-    txt: 
+    txt: "Item exorcismus unde supra. 1. Exorcizo te, maledicte et inmunde spiritus,
+      draco, basilisce, serpens noxie, per Deum omnipotentem, per verbum veritatis
+      et per signum crucis Iesu Christi Nazaren , Je vous exorcise, esprits maudits
+      et impurs, dragon, basilic, serpent nuisible, par Dieu Tout-Puissant, par la
+      parole de v\xE9rit\xE9 et par le signe de la croix de J\xE9sus-Christ de Nazareth,
+      et par l'agneau sans tache sorti du le plus haut, con\xE7u du Saint-Esprit,
+      n\xE9 de la vierge Marie,"
+  - enumTxt: 1
+    txt: "hic exorcista signando membra vexati, Poss\xE8de l'esprit comme le d\xE9mon
+      poss\xE8de le corps. Amen, Amen, fuis car tu crains Dieu, il est la peur et
+      l'effroi dont m\xEAme Satant est sujet"
