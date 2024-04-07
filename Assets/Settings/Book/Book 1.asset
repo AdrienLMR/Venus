@@ -13,8 +13,33 @@ MonoBehaviour:
   m_Name: Book 1
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7dcf359f2e707144b8691b2f1a5d8d08, type: 3}
-  txt:
-  - truc muche 3
-  - 'la blague j''ai mit truc muche partout '
-  - 'trop marrant '
-  - je manque d'inspi du coup je met nimp
+  txtExcorsiste:
+  - enumTxt: 1
+    txt: "Zyra, Zyra, Zyra, Amara, Amara, Amara, Opera, Opera, Opera. Conjuro te,
+      Sibilla, per nomen tuum lucidum, et per nomen Domini Egleria, et per virginitatem
+      Domini nostri Ihesu Christi, et per virginitatem gloriose Virginis Marie  Zyra,
+      Zyra, Zyra, Amara, Amara, Amara, Opera, Opera, Opera. Je te conjure, Sibylle,
+      par ton nom clairvoyant , et par le nom du Seigneur Egleria, et par la virginit\xE9
+      de notre Seigneur J\xE9sus-Christ, et par la virginit\xE9 de la glorieuse Vierge
+      Marie."
+  - enumTxt: 1
+    txt: "Conjuro te, angele Dei, per meam virginitatem, et per hec sanctissima nomina
+      Domini nostri Ihesu Sother, Sabaoth, Melchay, El,  Gedeon, Usyon, Ysus,Tetragramathon,
+      et per omnem passionem Domini nostri  Je te conjure, ange de Dieu, par ma virginit\xE9
+      et par ces tr\xE8s saints noms : Sother, Sabaoth, Melchay, El,  Gedeon, Usyon,
+      Ysus,T\xE9tragramathon, et \xE0 travers toute la passion de notre Seigneur."
+  - enumTxt: 0
+    txt: "exorcista pugnaturus adversus daemonem  L\u2019exorciste doit se battre
+      contre le D\xE9mon  "
+  - enumTxt: 1
+    txt: "Conjuro te, kristalle, per Patrem et Filium et Sanctum Spiritum, et per
+      creatorem celi et terre et omnia que in eis sunt, et per omnia nomina Domini
+      nostri Ihesu Trinitas, Daffriel, Asiel, Panis, Fons, Vivuus, Januor, Petra,
+      Lapis, Angularis, Pastor, Sponsus, Propheta, Sacerdos, Sanctus, Immortalis,
+      Ihesus Christus, Filius hominis, Spiritus Sanctus  Je te conjure, Kristal,
+      par le P\xE8re et le Fils et le Saint-Esprit, et par le cr\xE9ateur du ciel
+      et de la terre et de tout ce qui s'y trouve, et par tous les noms de notre
+      Seigneur la Trinit\xE9, Daffriel, Asiel, Panis, Fons, Vivuus, Januor, Petra,
+      Lapis, Angularis, Pastor, Sponsus, Propheta, Sacerdos, Sanctus, Immortalis,
+      Ihesus Christus, Filius hominis, Spiritus Sanctus paraclitus, Proph\xE8te,
+      Pr\xEAtre, Saint, Immortel, J\xE9sus-Christ, Fils de l'Homme , Saint-Esprit"

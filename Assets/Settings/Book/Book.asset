@@ -15,10 +15,25 @@ MonoBehaviour:
   sprite: {fileID: 21300000, guid: 7dcf359f2e707144b8691b2f1a5d8d08, type: 3}
   txtExcorsiste:
   - enumTxt: 2
-    txt: plouf plouf
+    txt: "O rex glorie Domine Ihesu Christe dulcissime qui es Alpha et O, fons et
+      origo, conditor et redemptor omnium, te supliciter invoco, imploro et exoro
+      per omnia nomina tua effabilia et ineffabilia et inclita et gloriosa Trinitas 
+      \xD4 roi, gloire au Seigneur J\xE9sus-Christ, le plus doux qui es l'Alpha et
+      le Omega, la source et l'origine, le fondateur et le r\xE9dempteur de tout,
+      je t'invoque, je t'implore \xE0 travers tous tes noms ineffables et illustre
+      de la glorieuse Trinit\xE9"
   - enumTxt: 2
-    txt: tes
+    txt: "Exorcizo te, inmunde spiritus, in nomine patris et filii et spiritus sancti,
+      ut exeas et recedas ad hoc famulo Dei  Je t'exorcise, esprit impur, au nom
+      du P\xE8re et du Fils et du Saint-Esprit, pour sortir et reto"
   - enumTxt: 2
-    txt: re
+    txt: "Ad succurendum his qui a demonio 1. In primis, quando infirmus qui a demonio
+      vexatur venerit ad sacerdotem, (ducat eum sacerdos in ecclesiam ante altare
+      et) diligenter inquirat ab eo, sive masculus sit sive femina, quomodo aut qualiter
+      illi eadem passio evenerit.   Pour aider ceux qui sont tourment\xE9s par le
+      diable 1. En premier lieu, lorsqu'un malade tourment\xE9 par un d\xE9mon vient
+      chez le pr\xEAtre, (le pr\xEAtre doit le conduire dans l'\xE9glise devant l'autel
+      et) lui demander soigneusement s'il est un homme ou une femme, comment ou de
+      quelle mani\xE8re la m\xEAme passion lui est arriv\xE9e."
   - enumTxt: 2
-    txt: rrrrree
+    txt: "Recettes contre les d\xE9mons   Origan Laudanum Alo\xE8s Musc "
