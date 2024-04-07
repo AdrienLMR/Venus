@@ -3,7 +3,21 @@ guid: 4253aa0ea4f1fab46bcfa42a4f24d505
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - gameManager: {fileID: 3500733377088914269, guid: 01fe385a2eea7a54a8c9cba3a0bbb87d, type: 3}
+  - backgroundImage: {instanceID: 0}
+  - map: {instanceID: 0}
+  - managerSituation2: {instanceID: 0}
+  - managerSituation3: {instanceID: 0}
+  - btnExorcismProcedure: {instanceID: 0}
+  - caracter: {instanceID: 0}
+  - caracterText: {instanceID: 0}
+  - questionContainer: {instanceID: 0}
+  - yes: {instanceID: 0}
+  - no: {instanceID: 0}
+  - situationObjects: {instanceID: 0}
+  - situationTexts: {instanceID: 0}
+  - excorsismeButton: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

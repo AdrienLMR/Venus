@@ -77,4 +77,28 @@ public class GameManager : MonoBehaviour
                 sfx[i].Stop();
         }
     }
+
+    public void leopoldMusicOn()
+    {
+        playOnlyMusic(2);
+        playOnlySfx(4);
+    }
+
+    public void louiseMusicOn()
+    {
+        playOnlyMusic(4);
+        playOnlySfx(7);
+    }
+
+    public void tobiasMusicOn()
+    {
+        playOnlyMusic(5);
+        playOnlySfx(5);
+    }
+
+    public void estherMusicOn()
+    {
+        playOnlyMusic(3);
+        playOnlySfx(3);
+    }
 }

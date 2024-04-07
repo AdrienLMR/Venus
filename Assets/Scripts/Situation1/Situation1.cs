@@ -6,6 +6,8 @@ using UnityEngine.UI;
 [DisallowMultipleComponent]
 public class Situation1 : MonoBehaviour
 {
+    [SerializeField] private GameManager gameManager;
+
     [Header("Objects")]
     [SerializeField] private Image backgroundImage = default;
     [SerializeField] private Map map = default;
@@ -72,6 +74,26 @@ public class Situation1 : MonoBehaviour
         btnExorcismProcedure.gameObject.SetActive(false);
 
         TextAppear.AppearProgressively(caracterText, LevelManager.Instance.currentPerso.scriptableObjectPerso.yesHelp, timeToDisplayText);
+
+        switch (LevelManager.Instance.currentPerso.scriptableObjectPerso.name)
+        {
+            case "Leopold":
+                gameManager.leopoldMusicOn();
+                break;
+
+            case "Esther":
+                gameManager.estherMusicOn();
+                break;
+
+            case "Louise":
+                gameManager.louiseMusicOn();
+                break;
+
+            case "Tobias":
+                gameManager.louiseMusicOn();
+                break;
+
+        }
     }
 
     private void No()
