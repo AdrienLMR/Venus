@@ -85,6 +85,22 @@ public class TextAppear : MonoBehaviour
                 CallBackOnFinished();
             }
         }
+
+        if (Input.anyKeyDown)
+        {
+            textMesh.text = text[textIndex];
+
+            if (textIndex < text.Count - 1)
+            {
+                SetModeWaitForInput();
+            }
+            else
+            {
+                textIndex = 0;
+                SetModeVoid();
+                CallBackOnFinished();
+            }
+        }
     }
 
     private void DoActionWaitForInput()

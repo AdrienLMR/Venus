@@ -12,16 +12,17 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Map map = default;
     [SerializeField] private Situation1 situation1 = default;
     [SerializeField] private ManagerSituation2 managerSituation2 = default;
+    [SerializeField] private ManagerSituation3 managerSituation3 = default;
 
-    public Perso currentPerso = default;
-    public DemonObject actualdemonObject = default;
+    [HideInInspector] public Perso currentPerso = default;
+    [HideInInspector] public DemonObject actualdemonObject = default;
 
     private void Awake()
     {
         Instance = this;
 
         map.OnClickHouse += Map_OnClickHouse;
-        //managerSituation2.
+        managerSituation2.OnValidateObject += ManagerSituation2_OnValidateObject;
     }
 
     #region events
@@ -29,6 +30,12 @@ public class LevelManager : MonoBehaviour
     {
         currentPerso = house.perso;
         Transition.TransitionTo(situation1.gameObject).AddCallbackInMiddle(InitSituation1).AddCallbackInEnd(StartSituation1);
+    }
+
+    private void ManagerSituation2_OnValidateObject(ManagerSituation2 sender, DemonObject demonObject)
+    {
+        actualdemonObject = demonObject;
+        Transition.TransitionTo(managerSituation3.gameObject);
     }
     #endregion
 
@@ -44,6 +51,7 @@ public class LevelManager : MonoBehaviour
 
     public static void Clean()
     {
-
+        Instance.currentPerso = null;
+        Instance.actualdemonObject = null;
     }
 }

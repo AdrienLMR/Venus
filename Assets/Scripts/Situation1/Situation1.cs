@@ -12,6 +12,7 @@ public class Situation1 : MonoBehaviour
     [SerializeField] private ManagerSituation3 managerSituation3 = default;
     [SerializeField] private Image caracter = default;
     [SerializeField] private TextMeshProUGUI caracterText = default;
+    [SerializeField] private GameObject questionContainer = default;
 
     [SerializeField] private Button yes = default;
     [SerializeField] private Button no = default;
@@ -57,6 +58,7 @@ public class Situation1 : MonoBehaviour
         caracterText.text = string.Empty;
         caracter.sprite = null;
         caracter.color = new Color(0, 0, 0, 0);
+        questionContainer.SetActive(true);
     }
     #endregion
 
@@ -67,6 +69,7 @@ public class Situation1 : MonoBehaviour
         no.enabled = false;
         situationObjects.enabled = true;
         situationTexts.enabled = true;
+        questionContainer.SetActive(false);
     }
 
     private void No()
@@ -77,12 +80,12 @@ public class Situation1 : MonoBehaviour
 
     private void SituationObjects()
     {
-        Transition.TransitionTo(managerSituation2.gameObject);
+        Transition.TransitionTo(managerSituation2.gameObject).AddCallbackInMiddle(Clean);
     }
 
     private void SituationTexts()
     {
-        Transition.TransitionTo(managerSituation3.gameObject);
+        Transition.TransitionTo(managerSituation3.gameObject).AddCallbackInMiddle(Clean);
     }
     #endregion
 }

@@ -761,6 +761,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   map: {fileID: 3321891703937466739}
   situation1: {fileID: 588674807}
+  managerSituation2: {fileID: 2055882850}
+  managerSituation3: {fileID: 909513044}
+  currentPerso: {fileID: 0}
+  actualdemonObject: {fileID: 0}
 --- !u!224 &1694521075 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8712869270301408758, guid: d8cf99ed1f0573947917cd7f4a8f81ae, type: 3}
@@ -861,6 +865,14 @@ PrefabInstance:
     - target: {fileID: 3889434824033793941, guid: 8e0bee6dd6cedda46980c0759fd1ae00, type: 3}
       propertyPath: m_Name
       value: PanelSituation2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4379112989110741271, guid: 8e0bee6dd6cedda46980c0759fd1ae00, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6330578374860938202, guid: 8e0bee6dd6cedda46980c0759fd1ae00, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 50
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

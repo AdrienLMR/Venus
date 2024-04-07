@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public delegate void ManagerSituation2EventHandler(ManagerSituation2 sender, DemonObject demonObject);
+
 public class ManagerSituation2 : MonoBehaviour
 {
 	[SerializeField] private Perso perso = default;
@@ -12,6 +14,8 @@ public class ManagerSituation2 : MonoBehaviour
 	public static ManagerSituation2 Instance;
 
 	private DemonObject actualdemonObject = default;
+
+	public event ManagerSituation2EventHandler OnValidateObject;
 
 	private void Awake()
 	{
@@ -32,14 +36,14 @@ public class ManagerSituation2 : MonoBehaviour
 			demonObject.Init();
 		}
 
-		btnValidate.onClick.AddListener(onClickValidate);
+		btnValidate.onClick.AddListener(OnClickValidate);
 
 		gameObject.SetActive(false);
 	}
 
-	private void onClickValidate()
+	private void OnClickValidate()
 	{
-		Debug.Log("Validation Element : " + actualdemonObject.name);
+		OnValidateObject?.Invoke(this, actualdemonObject);
 	}
 
 	private void DemonObject_onClicked(DemonObject sender)
