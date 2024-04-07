@@ -25,20 +25,23 @@ public class ManagerSituation2 : MonoBehaviour
 
 	private void Start()
 	{
-		perso.Init();
+		gameObject.SetActive(false);
+	}
+
+	public void Init(ScriptableObjectPerso scriptableObject)
+	{
+		perso.Init(scriptableObject);
 
 		for (int i = 0; i < allDemonObject.Count; i++)
 		{
 			DemonObject demonObject = allDemonObject[i];
 
 			demonObject.onClicked += DemonObject_onClicked;
-			demonObject.scriptableObjectDemonObject = perso.scripatbleObjectPerso.allDemonObject[i];
+			demonObject.scriptableObjectDemonObject = perso.scriptableObjectPerso.allDemonObject[i];
 			demonObject.Init();
 		}
 
 		btnValidate.onClick.AddListener(OnClickValidate);
-
-		gameObject.SetActive(false);
 	}
 
 	private void OnClickValidate()
@@ -57,8 +60,5 @@ public class ManagerSituation2 : MonoBehaviour
 		}
 	}
 
-	public void Reset_()
-	{
-
-	}
+	
 }

@@ -21,11 +21,9 @@ public class FullScreenBook : MonoBehaviour
 
 	private void Start()
 	{
-		ChangeText(scriptableObjectBook.txt);
-
-		SVGImage image = GetComponent<SVGImage>();
-		image.sprite = scriptableObjectBook.sprite;
+		Init();
 	}
+
 
 	public void ChangeText(List<string> newText)
 	{
@@ -33,5 +31,17 @@ public class FullScreenBook : MonoBehaviour
 		{
 			allTxt[i].text = newText[i];
 		}
+	}
+
+	private void Init()
+	{
+		SVGImage image = GetComponent<SVGImage>();
+		image.sprite = scriptableObjectBook.sprite;
+		ChangeText(scriptableObjectBook.txt);
+	}
+
+	private void Reset_()
+	{
+		Init();
 	}
 }

@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class Perso : MonoBehaviour
 {
-	public ScriptableObjectPerso scripatbleObjectPerso = default;
+	public ScriptableObjectPerso scriptableObjectPerso = default;
 
-	public void Init()
+	public void Init(ScriptableObjectPerso scriptableObjectPerso)
 	{
-		GetComponent<SVGImage>().sprite = scripatbleObjectPerso.sprite;
+		this.scriptableObjectPerso = scriptableObjectPerso;
+		GetComponent<SVGImage>().sprite = scriptableObjectPerso.sprite;
 	}
 }

@@ -17,7 +17,7 @@ public class BtnExorcismProcedure : MonoBehaviour
 
 	private void DoExorcismProcedure()
 	{
-		ScriptableObjectPerso scripatbleObjectPerso = LevelManager.Instance.currentPerso.scripatbleObjectPerso;
+		ScriptableObjectPerso scripatbleObjectPerso = LevelManager.Instance.currentPerso.scriptableObjectPerso;
 		DemonObject actualDemonObject = LevelManager.Instance.actualdemonObject;
 		bool isPosses = scripatbleObjectPerso.isPosses;
 
@@ -38,7 +38,7 @@ public class BtnExorcismProcedure : MonoBehaviour
 
 		foreach (var txtSelected in selectedTxt)
 		{
-			foreach (var txtExcorsiste in currentPerso.scripatbleObjectPerso.txtExcorsiste)
+			foreach (var txtExcorsiste in currentPerso.scriptableObjectPerso.txtExcorsiste)
 			{
 				Debug.Log(txtExcorsiste);
 				Debug.Log(txtSelected);

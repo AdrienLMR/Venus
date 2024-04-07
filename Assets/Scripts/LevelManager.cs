@@ -36,6 +36,7 @@ public class LevelManager : MonoBehaviour
 	{
         currentPerso = sender.perso.GetComponent<Perso>();
         Transition.TransitionTo(situation1.gameObject).AddCallbackInMiddle(InitSituation1).AddCallbackInEnd(StartSituation1);
+        ManagerSituation2.Instance.Init(currentPerso.scriptableObjectPerso);
     }
 
 	#region events
@@ -54,12 +55,12 @@ public class LevelManager : MonoBehaviour
 
     private void InitSituation1()
     {
-        situation1.Init(currentPerso.scripatbleObjectPerso.sprite);
+        situation1.Init(currentPerso.scriptableObjectPerso.sprite);
     }
 
     private void StartSituation1()
     {
-        situation1.StartAppear(currentPerso.scripatbleObjectPerso.txtIntroduction);
+        situation1.StartAppear(currentPerso.scriptableObjectPerso.txtIntroduction);
     }
 
     public static void Clean()

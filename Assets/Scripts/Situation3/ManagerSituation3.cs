@@ -55,4 +55,10 @@ public class ManagerSituation3 : MonoBehaviour
 	{
 		this.saveTxt = saveTxt;
 	}
+
+	public void Reset_()
+	{
+		ActivateBookContainer(true, false);
+		btnBackSituation3.gameObject.SetActive(false);
+	}
 }

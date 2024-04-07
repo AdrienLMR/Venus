@@ -38,9 +38,6 @@ public class ItemSlotTxtBook : ItemSlot
 		base.OnDropObject(dragObject);
 		txtSave.Add(dragObject.GetComponent<TextMeshProUGUI>().text);
 		ManagerSituation3.Instance.SaveText(txtSave);
-
-		if (actualNumberPhrase >= maxNumberPhrase)
-			Debug.LogWarning("Passe a scene suivante");
 	}
 
 	public void IncreaseNumberPhrase(int numberToAdd)
@@ -52,5 +49,22 @@ public class ItemSlotTxtBook : ItemSlot
 	public void RemoveTxt(string TxtToDelete)
 	{
 		txtSave.Remove(TxtToDelete);
+		ManagerSituation3.Instance.SaveText(txtSave);
+	}
+
+	private void Reset_()
+	{
+		foreach (var txtToDeleted in txtSave)
+		{
+			RemoveTxt(txtToDeleted);
+		}
+
+		foreach (var containerTxt in allContainerTxt)
+		{
+			if (containerTxt.childCount > 0)
+				Destroy(containerTxt.GetChild(0));
+		}
+
+		ManagerSituation3.Instance.SaveText(txtSave);
 	}
 }
