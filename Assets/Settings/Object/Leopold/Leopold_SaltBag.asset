@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b08aac1a8aaca24d9964361847ce28b, type: 3}
-  m_Name: Religieuse_DemonObject 2
+  m_Name: Leopold_SaltBag
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: af194119692fe6446986dbb667d36009, type: 3}
-  objectName: 
+  sprite: {fileID: 0}
+  objectName: SaltBag
+  txtDescription: "Purifier le b\xE9tail ou emp\xEAcher les temp\xEAtes, si la personne
+    poss\xE9d\xE9e provoque des intemp\xE9ries ou le mauvais temps, la malchance
+    et le chaos."
+  rightObject: 1

@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b08aac1a8aaca24d9964361847ce28b, type: 3}
-  m_Name: Religieuse_DemonObject 3
+  m_Name: Tobias_SilverKnife
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 369dcab10de45764aa28383dd8458667, type: 3}
-  objectName: 
+  sprite: {fileID: 0}
+  objectName: Silver Knife
+  txtDescription: "Utile contre les cr\xE9atures maudites \xE0 queue et poils. Un
+    conseil : plongez la lame directement dans le c\u0153ur."
+  rightObject: 0
