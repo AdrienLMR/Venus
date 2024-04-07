@@ -161,8 +161,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -213,7 +213,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8712869270301408758}
   - component: {fileID: 521490916078528348}
-  - component: {fileID: 3572342328885805294}
   - component: {fileID: 8592493299141870381}
   m_Layer: 5
   m_Name: TutoScreen
@@ -253,36 +252,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7866962079983649763}
   m_CullTransparentMesh: 1
---- !u!114 &3572342328885805294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7866962079983649763}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!114 &8592493299141870381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,9 +268,26 @@ MonoBehaviour:
   textContainer: {fileID: 7867834321428081838}
   textMesh: {fileID: 3652400803303062081}
   text:
-  - Test 1
-  - Test 2
-  timeToDisplay: 2
+  - "Vous incarnez le P\xE8re Salomon, nouveau pr\xEAtre exorciste envoy\xE9 au sein
+    du village de Loudun aux alentours de l\u2019an 1632. Ce village est victime
+    de nombreuses rumeurs, fond\xE9es ou non selon lesquelles plusieurs cas de possessions
+    auraient \xE9t\xE9 d\xE9clar\xE9s. Touchant au d\xE9part seulement les s\u0153urs
+    du couvent, un climat de peur et de suspicion se propage d\xE9sormais en m\xEAme
+    temps que les cas de possession qui semblent se multiplier. "
+  - "Le pr\xEAtre en poste \xE0 Loudun ; Urbain Grandier semble avoir \xE9t\xE9 mis
+    en cause, accus\xE9 de pactiser avec le D\xE9mon et ses serviteurs, ce dernier
+    aurait fui le village, d\xE9laissant le devoir sacr\xE9 qui \xE9tait le sien.
+    D\xE9sormais, il ne reste plus que Salomon, seul face aux habitants et aux maux
+    qui les accablent."
+  - "Il va devoir enqu\xEAter et d\xE9celer qui est le v\xE9ritable et malheureux
+    poss\xE9d\xE9 tout en continuant son apprentissage des rites d\u2019exorcisme
+    et de la cr\xE9ation de ses propres textes, compilant le savoir de ses pr\xE9d\xE9cesseurs
+    et d\u2019autres auteurs plus ou moins l\xE9gitimes et accept\xE9s par l\u2019Eglise\u2026"
+  - "Quatre cas de possession sont d\xE9cel\xE9s \xE0 Loudun. A vous, P\xE8re Salomon,
+    de trouver qui est le malheureux ou la malheureuse poss\xE9d\xE9e. Afin de mener
+    \xE0 bien l\u2019exorcisme qui viendra les lib\xE9rer, composez ensuite votre
+    propre rituel et munissez-vous de vos outils sacr\xE9s."
+  timeToDisplay: 3
 --- !u!1 &7867834321428081838
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,8 +324,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00000023842, y: -270}
-  m_SizeDelta: {x: 603, y: 263}
+  m_AnchoredPosition: {x: -0.00000023842, y: -126.13}
+  m_SizeDelta: {x: 603, y: 454.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2115901017812865626
 CanvasRenderer:
