@@ -38,8 +38,8 @@ public class Situation1 : MonoBehaviour
 
         yes.enabled = false;
         no.enabled = false;
-        situationObjects.enabled = false;
-        situationTexts.enabled = false;
+        situationObjects.gameObject.SetActive(false);
+        situationTexts.gameObject.SetActive(false);
     }
 
     public void StartAppear(List<string> text)
@@ -67,8 +67,8 @@ public class Situation1 : MonoBehaviour
     {
         yes.enabled = false;
         no.enabled = false;
-        situationObjects.enabled = true;
-        situationTexts.enabled = true;
+        situationObjects.gameObject.SetActive(true);
+        situationTexts.gameObject.SetActive(true);
         questionContainer.SetActive(false);
     }
 
