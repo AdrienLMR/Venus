@@ -43,7 +43,7 @@ public class BtnExorcismProcedure : MonoBehaviour
 				Debug.Log(txtExcorsiste);
 				Debug.Log(txtSelected);
 
-				if (txtSelected == txtExcorsiste)
+				if (txtSelected == txtExcorsiste.txt)
 					rightTxt++;
 
 			}
