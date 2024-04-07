@@ -18,11 +18,20 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cd1ec7d37a2139c4e8edad9127261eae, type: 2}
   - {fileID: 11400000, guid: 07d3b63ad88468848842bf56839d350d, type: 2}
   txtIntroduction:
-  - Ceci est un test
-  - Ceci est un test 2
-  - Ceci est un test 3
+  - "\u2014 P\xE8re Salomon : On dit \xE0 Loudun que notre P\xE8re Grandier a trahi
+    Dieu, tel Judas, il nous a tourn\xE9 le dos et a convoqu\xE9 Satan sur les s\u0153urs.
+    S\u0153ur Esther est la plus durement touch\xE9e, mon dieu\u2026Elle souffre,
+    elle a des migraines et ne peut plus entrer dans la lumi\xE8re, elle br\xFBle,
+    elle se renferme dans l\u2019\xE9glise\u2026On l\u2019accuse elle-aussi\u2026On
+    dit qu\u2019elle se balade la nuit et que le sang la suit. P\xE8re Grandier est
+    celui qui l\u2019a ramen\xE9e\u2026Peut-\xEAtre est-elle aussi supp\xF4t du mal
+    ? Je vais voir ce que je peux faire. Voyons voir\u2026"
   isPosses: 0
   yesHelp:
-  - aaa
+  - "\u2014 P\xE8re Salomon : Cette personne me semble poss\xE9d\xE9e, il me faut
+    la sauver\u2026Je vais \xE9tablir mon rituel \xE0 l\u2019aide des documents de
+    mes pr\xE9d\xE9cesseurs mais je dois aussi r\xE9cup\xE9rer l\u2019outil ad\xE9quat\u2026Voyons
+    voir ce que j\u2019ai. "
   noHelp:
-  - aaa
+  - "\u2014 P\xE8re Salomon : Cette personne me semble seulement malade, je reviendrais
+    plus tard mais pas tout de suite, je dois trouver le malheureux, victime de Satan"

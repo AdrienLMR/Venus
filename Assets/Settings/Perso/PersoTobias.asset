@@ -18,11 +18,19 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 522cd52c92a1d7f43afc59fe1da5215c, type: 2}
   - {fileID: 11400000, guid: 0a1d68a903256ea4291e09dfc1913171, type: 2}
   txtIntroduction:
-  - Ceci est un test
-  - Ceci est un test 2
-  - Ceci est un test 3
+  - "\u2014 Tobias : Vous n\u2019avez rien \xE0 faire ici, laissez-moi ! O\xF9 est
+    ma femme ? Elle doit s\u2019occuper des enfants..O\xF9 sont-ils ? Je dois m\u2019occuper
+    du b\xE9tail, allez-vous en !  "
+  - "\u2014 P\xE8re Salomon : Le malheureux ne sait plus ce qu\u2019il dit. D\u2019apr\xE8s
+    ses voisins, sa famille est partie il y a plusieurs mois..Quant \xE0 son b\xE9tail,
+    il n\u2019y a qu\u2019une vache et une poule, rien qui ne lui prenne trop de
+    temps. Lui aussi, je vais devoir \xE9tudier son cas avec attention."
   isPosses: 0
   yesHelp:
-  - aaa
+  - "\u2014 P\xE8re Salomon : Cette personne me semble poss\xE9d\xE9e, il me faut
+    la sauver\u2026Je vais \xE9tablir mon rituel \xE0 l\u2019aide des documents de
+    mes pr\xE9d\xE9cesseurs mais je dois aussi r\xE9cup\xE9rer l\u2019outil ad\xE9quat\u2026Voyons
+    voir ce que j\u2019ai. "
   noHelp:
-  - aaa
+  - "\u2014 P\xE8re Salomon : Cette personne me semble seulement malade, je reviendrais
+    plus tard mais pas tout de suite, je dois trouver le malheureux, victime de Satan"

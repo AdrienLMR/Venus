@@ -40,8 +40,7 @@ public class Situation1 : MonoBehaviour
         caracterText.text = string.Empty;
         backgroundImage.sprite = background;
 
-        yes.enabled = false;
-        no.enabled = false;
+        questionContainer.SetActive(false);
         situationObjects.gameObject.SetActive(false);
         situationTexts.gameObject.SetActive(false);
         excorsismeButton.SetActive(true);
@@ -54,8 +53,7 @@ public class Situation1 : MonoBehaviour
 
     private void EndAppear()
     {
-        yes.enabled = true;
-        no.enabled = true;
+        questionContainer.SetActive(true);
     }
 
     private void Clean()
@@ -68,8 +66,6 @@ public class Situation1 : MonoBehaviour
     #region Buttons
     private void Yes()
     {
-        yes.enabled = false;
-        no.enabled = false;
         situationObjects.gameObject.SetActive(true);
         situationTexts.gameObject.SetActive(true);
         questionContainer.SetActive(false);
@@ -80,7 +76,7 @@ public class Situation1 : MonoBehaviour
 
     private void No()
     {
-        TextAppear.AppearProgressively(caracterText, LevelManager.Instance.currentPerso.scriptableObjectPerso.yesHelp, timeToDisplayText, EndNo);
+        TextAppear.AppearProgressively(caracterText, LevelManager.Instance.currentPerso.scriptableObjectPerso.noHelp, timeToDisplayText, EndNo);
     }
 
     private void EndNo()
