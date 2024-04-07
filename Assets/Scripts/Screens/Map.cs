@@ -43,8 +43,8 @@ public class Map : MonoBehaviour
     {
         for (int i = 0; i < houseList.Count; i++)
         {
-            houseList[i].exclamation.SetActive(!houseList[i].isDone);
-            houseList[i].btn.gameObject.SetActive(!houseList[i].isDone);
+            //houseList[i].exclamation.SetActive(!houseList[i].isDone);
+            //houseList[i].btn.gameObject.SetActive(!houseList[i].isDone);
         }
     }
     #endregion
