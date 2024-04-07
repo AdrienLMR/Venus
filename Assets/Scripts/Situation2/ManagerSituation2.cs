@@ -52,4 +52,9 @@ public class ManagerSituation2 : MonoBehaviour
 				demonObject.Deselected();
 		}
 	}
+
+	public void Reset_()
+	{
+
+	}
 }

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,14 +7,16 @@ public class ManagerSituation3 : MonoBehaviour
 	[SerializeField] private GameObject bookContainer;
 	[SerializeField] private BtnBackSituation3 btnBackSituation3;
 
-	public static ManagerSituation3 managerSituation3 { get; private set; }
+	public static ManagerSituation3 Instance { get; private set; }
+
+	public List<string> saveTxt = new List<string>();
 
 	private FullScreenBook fullScreenBook = default;
 
 	private void Awake()
 	{
-		if(managerSituation3 != this)
-			managerSituation3 = this;
+		if(Instance != this)
+			Instance = this;
 	}
 
 	private void Start()
@@ -48,5 +49,10 @@ public class ManagerSituation3 : MonoBehaviour
 	{
 		bookContainer.SetActive(activateBookContainer);
 		fullScreenBook.gameObject.SetActive(activateFullScreenBook);
+	}
+
+	public void SaveText(List<string> saveTxt)
+	{
+		this.saveTxt = saveTxt;
 	}
 }

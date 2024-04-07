@@ -17,7 +17,7 @@ public class Book : MonoBehaviour
 
 	private void Awake()
 	{
-		Debug.LogError("Adrien qui fait des init c'est vraiment un truc de merde, faut aller se faire foutre");
+		//Debug.LogError("Adrien qui fait des init c'est vraiment un truc de merde, faut aller se faire foutre");
 		btn = GetComponent<Button>();
 		ButtonAddListner();
 		SVGImage image = GetComponent<SVGImage>();

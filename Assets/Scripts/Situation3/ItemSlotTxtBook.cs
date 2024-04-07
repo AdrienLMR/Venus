@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ItemSlotTxtBook : ItemSlot
@@ -9,6 +10,7 @@ public class ItemSlotTxtBook : ItemSlot
 
 	public static ItemSlotTxtBook Instance;
 
+	private List<string> txtSave = new List<string>();
 	private int actualNumberPhrase = 0;
 
 	override protected void Awake()
@@ -34,6 +36,8 @@ public class ItemSlotTxtBook : ItemSlot
 		}
 
 		base.OnDropObject(dragObject);
+		txtSave.Add(dragObject.GetComponent<TextMeshProUGUI>().text);
+		ManagerSituation3.Instance.SaveText(txtSave);
 
 		if (actualNumberPhrase >= maxNumberPhrase)
 			Debug.LogWarning("Passe a scene suivante");

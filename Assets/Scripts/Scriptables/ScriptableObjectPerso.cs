@@ -9,4 +9,5 @@ public class ScriptableObjectPerso : ScriptableObject
 	public List<ScriptableObjectDemonObject> allDemonObject = new List<ScriptableObjectDemonObject>();
 	public List<string> txtIntroduction = new List<string>();
 	public List<string> txtExcorsiste = new List<string>();
+	public bool isPosses = false;
 }
