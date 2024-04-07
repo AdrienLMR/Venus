@@ -72,9 +72,16 @@ public class Situation1 : MonoBehaviour
         situationTexts.gameObject.SetActive(true);
         questionContainer.SetActive(false);
         btnExorcismProcedure.gameObject.SetActive(false);
+
+        TextAppear.AppearProgressively(caracterText, LevelManager.Instance.currentPerso.scriptableObjectPerso.yesHelp, timeToDisplayText);
     }
 
     private void No()
+    {
+        TextAppear.AppearProgressively(caracterText, LevelManager.Instance.currentPerso.scriptableObjectPerso.yesHelp, timeToDisplayText, EndNo);
+    }
+
+    private void EndNo()
     {
         Clean();
         Transition.TransitionTo(map.gameObject);
