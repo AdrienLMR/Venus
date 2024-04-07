@@ -826,7 +826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253aa0ea4f1fab46bcfa42a4f24d505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  backgroundImage: {fileID: 0}
+  backgroundImage: {fileID: 7171620406099872399}
   map: {fileID: 0}
   managerSituation2: {fileID: 0}
   managerSituation3: {fileID: 0}

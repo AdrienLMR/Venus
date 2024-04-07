@@ -37,14 +37,14 @@ public class LevelManager : MonoBehaviour
         house = sender;
         currentPerso = sender.perso.GetComponent<Perso>();
         Transition.TransitionTo(situation1.gameObject).AddCallbackInMiddle(InitSituation1).AddCallbackInEnd(StartSituation1);
-        ManagerSituation2.Instance.Init(currentPerso.scriptableObjectPerso);
+        ManagerSituation2.Instance.Init(currentPerso.scriptableObjectPerso, house.background);
     }
 
 	#region Events
     private void ManagerSituation2_OnValidateObject(ManagerSituation2 sender, DemonObject demonObject)
     {
         actualdemonObject = demonObject;
-        Transition.TransitionTo(managerSituation3.gameObject);
+        Transition.TransitionTo(managerSituation3.gameObject).AddCallbackInMiddle(InitSituation3);
     }
     #endregion
 
@@ -56,6 +56,11 @@ public class LevelManager : MonoBehaviour
     private void StartSituation1()
     {
         situation1.StartAppear(currentPerso.scriptableObjectPerso.txtIntroduction);
+    }
+
+    private void InitSituation3()
+    {
+        managerSituation3.Init(house.background);
     }
 
     public static void Clean()

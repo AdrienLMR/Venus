@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManagerSituation3 : MonoBehaviour
 {
+	[SerializeField] private Image backgroundImage = default;
 	[SerializeField] private List<Book> allBook;
 	[SerializeField] private GameObject bookContainer;
 	[SerializeField] private BtnBackSituation3 btnBackSituation3;
@@ -17,9 +19,11 @@ public class ManagerSituation3 : MonoBehaviour
 	{
 		if(Instance != this)
 			Instance = this;
+
+		gameObject.SetActive(false);
 	}
 
-	private void Start()
+	public void Init(Sprite background)
 	{
 		foreach (var book in allBook)
 		{
@@ -29,7 +33,7 @@ public class ManagerSituation3 : MonoBehaviour
 		btnBackSituation3.onClickedBtnBack += BtnBackSituation3_onClickedBtnBack;
 		btnBackSituation3.gameObject.SetActive(false);
 
-		gameObject.SetActive(false);
+		backgroundImage.sprite = background;
 	}
 
 	private void BtnBackSituation3_onClickedBtnBack(BtnBackSituation3 sender)
