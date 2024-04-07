@@ -271,7 +271,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberToSucces: 3
-  textWin:
-  - You win !
-  textLose:
-  - You lose !
+  text1:
+  - "Vous avez r\xE9ussi \xE0 ramener la lumi\xE8re chez les villageois en chassant
+    le d\xE9mon et en sauvant les fid\xE8les, f\xE9licitations. Vous \xEAtes devenu
+    un exorciste confirm\xE9 et \xEAtes parvenu \xE0 rester sur le chemin de Dieu.
+    L\u2019Eglise vous loue et d\xE9cide de vous canoniser suite \xE0 votre r\xE9ussite
+    : Avoir chass\xE9 le mal des c\u0153urs des habitants de Loudun.."
+  text2:
+  - "Votre talent dans la reconnaissance des stigmates diabolique n\u2019est plus
+    \xE0 nier mais votre connaissance des rituels et de l\u2019art de l\u2019exorcisme
+    vous est encore inconnue\u2026Le malheureux poss\xE9d\xE9 n\u2019a pas \xE9t\xE9
+    sauv\xE9 et pire, le voil\xE0 qui se d\xE9cha\xEEne dans le village. Un autre
+    vous remplacera. "
+  text3:
+  - "Vous avez chass\xE9 le d\xE9mon qui avait pris possession du fid\xE8le et qui
+    avait maudit le village de Loudun. Malheureusement, vous avez parti li\xE9 avec
+    le mal. En utilisant le feu pour combattre le feu, vous vous \xEAtes souill\xE9
+    et vous rendez coupable au m\xEAme titre que P\xE8re Urbain Grandier d\u2019avoir
+    parti li\xE9 avec Satan et ses serviteurs. Malgr\xE9 votre victoire, vous serez
+    relev\xE9 de vos fonctions et excommuni\xE9, exil\xE9."

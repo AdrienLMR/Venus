@@ -7,8 +7,9 @@ public class BtnExorcismProcedure : MonoBehaviour
 {
 	[SerializeField] private int numberToSucces = 3;
 
-	[SerializeField] private List<string> textWin = new List<string>();
-	[SerializeField] private List<string> textLose = new List<string>();
+	[SerializeField] private List<string> text1 = new List<string>();
+	[SerializeField] private List<string> text2 = new List<string>();
+	[SerializeField] private List<string> text3 = new List<string>();
 
     private Button btn;
 
@@ -30,12 +31,12 @@ public class BtnExorcismProcedure : MonoBehaviour
 		DemonObject actualDemonObject = LevelManager.Instance.actualdemonObject;
 		bool isPosses = scripatbleObjectPerso.isPosses;
 
-		if ((!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject || !CheckSentence()) || actualDemonObject == null)
+		if ((!CheckSentence(out List<string> text) || !isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject) || actualDemonObject == null)
 		{
-			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(true));
+			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(text));
 		}else /*(isPosses && CheckSentence() && actualDemonObject.scriptableObjectDemonObject.rightObject)*/
 		{
-			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(false));
+			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(text));
 		}
 
 		FullScreenBook.FullScreenBookinstance.Reset_();
@@ -43,12 +44,12 @@ public class BtnExorcismProcedure : MonoBehaviour
 		ManagerSituation3.Instance.Reset_();
 	}
 
-	private void SendExorcismText(bool win)
+	private void SendExorcismText(List<string> text)
     {
-		EndScreen.Instance.BeginText(win ? textWin : textLose);
+		EndScreen.Instance.BeginText(text);
 	}
 
-	private bool CheckSentence()
+	private bool CheckSentence(out List<string> text)
 	{
 		List<ExcorsisteTxt> selectedTxt = ManagerSituation3.Instance.saveTxt;
 		int officiel = 0;
@@ -66,10 +67,19 @@ public class BtnExorcismProcedure : MonoBehaviour
 		}
 
 		if (officiel >= 3)
+		{
+			text = text1;
 			return true;
+		}
 		else if (proscrit >= 3)
+		{
+			text = text2;
 			return true;
+		}
 		else
-			return false;
+		{
+			text = text3;
+			return true;
+		}
 	}
 }
