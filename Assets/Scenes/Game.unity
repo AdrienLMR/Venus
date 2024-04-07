@@ -449,6 +449,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7612002774233636437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
   m_PrefabInstance: {fileID: 693442211}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &693442213 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7247852933057516047, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+  m_PrefabInstance: {fileID: 693442211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ddae045498238428f5052ec8e0ee5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &887170772
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,6 +881,7 @@ MonoBehaviour:
   situation1: {fileID: 588674807}
   managerSituation2: {fileID: 2055882850}
   managerSituation3: {fileID: 909513044}
+  btnExorcismProcedure: {fileID: 0}
   houseBtn:
   - {fileID: 3321891703937466743}
   - {fileID: 3321891703937466742}
@@ -877,6 +889,7 @@ MonoBehaviour:
   - {fileID: 3321891703937466740}
   currentPerso: {fileID: 0}
   actualdemonObject: {fileID: 0}
+  house: {fileID: 0}
 --- !u!224 &1694521075 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8712869270301408758, guid: d8cf99ed1f0573947917cd7f4a8f81ae, type: 3}
@@ -1572,6 +1585,10 @@ PrefabInstance:
       propertyPath: managerSituation3
       value: 
       objectReference: {fileID: 909513044}
+    - target: {fileID: 6773028332740348755, guid: d1f1fcc174f006844a1ebc0989e7f74b, type: 3}
+      propertyPath: btnExorcismProcedure
+      value: 
+      objectReference: {fileID: 693442213}
     - target: {fileID: 7778172941360387367, guid: d1f1fcc174f006844a1ebc0989e7f74b, type: 3}
       propertyPath: m_Name
       value: Situation1
@@ -1596,11 +1613,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 840384590983683573, guid: 345cf7d6362486745ac09fffda064833, type: 3}
       propertyPath: m_Name
-      value: TextScreen
+      value: EndScreen
       objectReference: {fileID: 0}
     - target: {fileID: 840384590983683573, guid: 345cf7d6362486745ac09fffda064833, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6916815256930009378, guid: 345cf7d6362486745ac09fffda064833, type: 3}
       propertyPath: m_Pivot.x

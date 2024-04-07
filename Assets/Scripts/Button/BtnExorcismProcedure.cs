@@ -7,12 +7,16 @@ public class BtnExorcismProcedure : MonoBehaviour
 {
 	[SerializeField] private int numberToSucces = 3;
 
+	[SerializeField] private List<string> textWin = new List<string>();
+	[SerializeField] private List<string> textLose = new List<string>();
+
     private Button btn;
 
 	private void Awake()
 	{
 		btn = GetComponent<Button>();
 		btn.onClick.AddListener(DoExorcismProcedure);
+		gameObject.SetActive(false);
 	}
 
 	private void DoExorcismProcedure()
@@ -23,11 +27,20 @@ public class BtnExorcismProcedure : MonoBehaviour
 
 		if ((!isPosses || !actualDemonObject.scriptableObjectDemonObject.rightObject) || !CheckSentence())
 		{
-			Debug.Log("C'est pas un possede");
+			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(true));
 		}else /*(isPosses && CheckSentence() && actualDemonObject.scriptableObjectDemonObject.rightObject)*/
 		{
-			Debug.Log("T'as reussi");
+			Transition.TransitionTo(EndScreen.Instance.gameObject).AddCallbackInMiddle(() => gameObject.SetActive(false)).AddCallbackInEnd(() => SendExorcismText(false));
 		}
+
+		FullScreenBook.FullScreenBookinstance.Reset_();
+		ItemSlotTxtBook.Instance.Reset_();
+		ManagerSituation3.Instance.Reset_();
+	}
+
+	private void SendExorcismText(bool win)
+    {
+		EndScreen.Instance.BeginText(win ? textWin : textLose);
 	}
 
 	private bool CheckSentence()

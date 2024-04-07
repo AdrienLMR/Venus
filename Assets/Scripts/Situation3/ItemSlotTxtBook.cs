@@ -52,7 +52,7 @@ public class ItemSlotTxtBook : ItemSlot
 		ManagerSituation3.Instance.SaveText(txtSave);
 	}
 
-	private void Reset_()
+	public void Reset_()
 	{
 		foreach (var txtToDeleted in txtSave)
 		{

@@ -28,31 +28,8 @@ public class Map : MonoBehaviour
     private void Awake()
     {
         quit.onClick.AddListener(Quit);
-
-        //HouseBtn house;
-
-        //for (int i = 0; i < houseList.Count; i++)
-        //{
-        //    house = houseList[i];
-        //    house.exclamation = house.btn.transform.GetChild(0).gameObject;
-        //    //house.button.onClick.AddListener(() => ClickOnHouse(house));
-        //}
-    }
-
-    public void Init()
-    {
-        for (int i = 0; i < houseList.Count; i++)
-        {
-            //houseList[i].exclamation.SetActive(!houseList[i].isDone);
-            //houseList[i].btn.gameObject.SetActive(!houseList[i].isDone);
-        }
     }
     #endregion
-
-    //private void ClickOnHouse(House house)
-    //{
-    //    OnClickHouse?.Invoke(this, house);
-    //}
 
     private void Quit()
     {

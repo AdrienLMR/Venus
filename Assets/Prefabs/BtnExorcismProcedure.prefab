@@ -68,8 +68,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
-  m_sharedMaterial: {fileID: -4860602689895262444, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
+  m_sharedMaterial: {fileID: 9184671354910977456, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -271,3 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberToSucces: 3
+  textWin:
+  - You win !
+  textLose:
+  - You lose !

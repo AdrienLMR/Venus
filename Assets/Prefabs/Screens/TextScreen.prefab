@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6916815256930009378}
   - component: {fileID: 5278096241479933724}
   - component: {fileID: 7333868107793281528}
+  - component: {fileID: 7653949878128096989}
   m_Layer: 5
   m_Name: TextScreen
   m_TagString: Untagged
@@ -77,6 +78,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7653949878128096989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840384590983683573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1a4736f8deea8e40837a3ca1eb91d08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMesh: {fileID: 3398772204452902285}
+  timeToDisplay: 2
 --- !u!1 &9150302367232133441
 GameObject:
   m_ObjectHideFlags: 0
@@ -146,8 +161,8 @@ MonoBehaviour:
   m_text: "Ceci est un text template pour voir la taille que \xE7a va prendre en
     hauteur et en largeur. C'est pour \xE7a qu'il faut qu'il soit suffisamment grand."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
-  m_sharedMaterial: {fileID: -4860602689895262444, guid: 9f7925f0f729c9148a912b45b432a14a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
+  m_sharedMaterial: {fileID: 9184671354910977456, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
