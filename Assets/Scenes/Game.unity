@@ -361,6 +361,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 454625073}
     m_Modifications:
+    - target: {fileID: 2249557382553294935, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_text
+      value: Exorciser
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249557382553294935, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2249557382553294935, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502505670198643437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502505670198643437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502505670198643437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502505670198643437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502505670198643437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502505670198643437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2502505670198643437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -150
+      objectReference: {fileID: 0}
     - target: {fileID: 6568788737686517569, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
       propertyPath: m_Name
       value: BtnExorcismProcedure
@@ -399,11 +439,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7612002774233636437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7612002774233636437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7612002774233636437, guid: 016a3c46c47dd764482ec3bbf52130db, type: 3}
       propertyPath: m_LocalPosition.x
@@ -986,6 +1026,7 @@ MonoBehaviour:
   currentPerso: {fileID: 0}
   actualdemonObject: {fileID: 0}
   house: {fileID: 0}
+  canExorcism: 0
 --- !u!224 &1694521075 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8712869270301408758, guid: d8cf99ed1f0573947917cd7f4a8f81ae, type: 3}
@@ -1723,6 +1764,14 @@ PrefabInstance:
     - target: {fileID: 840384590983683573, guid: 345cf7d6362486745ac09fffda064833, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011716230952720185, guid: 345cf7d6362486745ac09fffda064833, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2011716230952720185, guid: 345cf7d6362486745ac09fffda064833, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 18.109985
       objectReference: {fileID: 0}
     - target: {fileID: 6916815256930009378, guid: 345cf7d6362486745ac09fffda064833, type: 3}
       propertyPath: m_Pivot.x

@@ -21,6 +21,8 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public DemonObject actualdemonObject = default;
     [HideInInspector] public HouseBtn house = default;
 
+    public bool canExorcism = false;
+
     private void Awake()
     {
         Instance = this;
@@ -39,6 +41,7 @@ public class LevelManager : MonoBehaviour
         currentPerso = sender.perso.GetComponent<Perso>();
         Transition.TransitionTo(situation1.gameObject).AddCallbackInMiddle(InitSituation1).AddCallbackInEnd(StartSituation1);
         ManagerSituation2.Instance.Init(currentPerso.scriptableObjectPerso, house.background);
+        canExorcism = false;
     }
 
 	#region Events
@@ -47,6 +50,7 @@ public class LevelManager : MonoBehaviour
         actualdemonObject = demonObject;
         excorsismeButton.SetActive(true);
         Transition.TransitionTo(situation1.gameObject)/*.AddCallbackInMiddle(InitSituation3)*/;
+        canExorcism = true;
     }
     #endregion
 
@@ -57,7 +61,8 @@ public class LevelManager : MonoBehaviour
 
     private void StartSituation1()
     {
-        situation1.StartAppear(currentPerso.scriptableObjectPerso.txtIntroduction);
+        if(!canExorcism)
+            situation1.StartAppear(currentPerso.scriptableObjectPerso.txtIntroduction);
     }
 
     public void InitSituation3()

@@ -117,6 +117,6 @@ public class Transition : MonoBehaviour
             CallBackInEnd();
 
         CallBackInMiddle = null;
-        CallBackInMiddle = null;
+        CallBackInEnd = null;
     }
 }

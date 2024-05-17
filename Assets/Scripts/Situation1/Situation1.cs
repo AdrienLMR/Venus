@@ -68,6 +68,7 @@ public class Situation1 : MonoBehaviour
     #region Buttons
     private void Yes()
     {
+        gameManager = GameManager.Instance;
         situationObjects.gameObject.SetActive(true);
         situationTexts.gameObject.SetActive(true);
         questionContainer.SetActive(false);

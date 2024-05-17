@@ -48,6 +48,7 @@ public class ManagerSituation3 : MonoBehaviour
 	{
 		Transition.TransitionTo(LevelManager.Instance.situation1.gameObject);
 		LevelManager.Instance.excorsismeButton.SetActive(true);
+		LevelManager.Instance.canExorcism = true;
 	}
 
 	private void BtnBackSituation3_onClickedBtnBack(BtnBackSituation3 sender)

@@ -21,8 +21,18 @@ public class GameManager : MonoBehaviour
     [Header("Sounds")]
     [SerializeField] private List<AudioSource> sfx;
 
-    // Update is called once per frame
-    void Update()
+    public static GameManager Instance = default;
+
+	private void Awake()
+	{
+        if (Instance != null)
+            Destroy(gameObject);
+
+        Instance = this;
+	}
+
+	// Update is called once per frame
+	void Update()
     {
         if (!main && (titleScreen.activeSelf || mapScreen.activeSelf))
         {
