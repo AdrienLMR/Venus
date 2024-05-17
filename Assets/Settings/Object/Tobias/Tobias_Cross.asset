@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: b158d3eb1f73a474e893226d46569ac0, type: 3}
   objectName: Cross
-  txtDescription: "Prot\xE8ge les lieux de la venue des d\xE9mons, les rejettent
-    et leur inflige les douleurs leurs p\xE9ch\xE9s et de leurs vices commis"
+  txtDescription: "Prot\xE8ge les lieux de la venue des d\xE9mons, les rejette et
+    leur inflige les douleurs leurs p\xE9ch\xE9s et de leurs vices commis"
   rightObject: 1

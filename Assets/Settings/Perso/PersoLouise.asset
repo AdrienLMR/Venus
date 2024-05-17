@@ -23,18 +23,18 @@ MonoBehaviour:
     \u03BD\u03B1 \u03BC\u03B9\u03BB\u03AE\u03C3\u03C9, \u03C3\u03B5 \u03C0\u03B1\u03C1\u03B1\u03BA\u03B1\u03BB\u03CE,
     \u0398\u03B5\u03AD \u03BC\u03BF\u03C5, \u03B2\u03BF\u03AE\u03B8\u03B7\u03C3\u03AD
     \u03BC\u03B5\u2026"
-  - "\u2014 P\xE8re Salomon : La malheureuse est maudite\u2026Cette langue me dit
-    quelque chose\u2026Elle n\u2019est pas d\u2019ici mais je ne suis pas s\xFBr
-    non plus qu\u2019il s\u2019agisse de la langue des enfers\u2026De ce que j\u2019en
+  - "\u2014 P\xE8re Salomon : La malheureuse est maudite\u2026 Cette langue me dit
+    quelque chose\u2026 Elle n\u2019est pas d\u2019ici mais je ne suis pas s\xFBr
+    non plus qu\u2019il s\u2019agisse de la langue des enfers\u2026 De ce que j\u2019en
     sais, avant de se r\xE9veiller, la pauvre est partie en voyage et est tomb\xE9e
     malade, elle a dormi un mois durant et s\u2019est r\xE9veill\xE9e ainsi. Je dois
     enqu\xEAter mais la malheureuse est v\xE9ritablement atteinte d\u2019un mal inconnu\u2026."
   isPosses: 0
   yesHelp:
   - "\u2014 P\xE8re Salomon : Cette personne me semble poss\xE9d\xE9e, il me faut
-    la sauver\u2026Je vais \xE9tablir mon rituel \xE0 l\u2019aide des documents de
-    mes pr\xE9d\xE9cesseurs mais je dois aussi r\xE9cup\xE9rer l\u2019outil ad\xE9quat\u2026Voyons
-    voir ce que j\u2019ai. "
+    la sauver\u2026 Je vais \xE9tablir mon rituel \xE0 l\u2019aide des documents
+    de mes pr\xE9d\xE9cesseurs mais je dois aussi r\xE9cup\xE9rer l\u2019outil ad\xE9quat\u2026
+    Voyons voir ce que j\u2019ai. "
   noHelp:
   - "\u2014 P\xE8re Salomon : Cette personne me semble seulement malade, je reviendrais
     plus tard mais pas tout de suite, je dois trouver le malheureux, victime de Satan"

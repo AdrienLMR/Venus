@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 8323c174d3455e345b5f4f7da271f480, type: 3}
   objectName: HolyWaterBottle
-  txtDescription: "les fruits li\xE9s \xE0 l\u2019usage de l\u2019eau b\xE9nite sont
+  txtDescription: "Les fruits li\xE9s \xE0 l\u2019usage de l\u2019eau b\xE9nite sont
     nombreux, parmi lesquels la r\xE9mission des p\xE9ch\xE9s et l\u2019\xE9loignement
     des d\xE9mons "
   rightObject: 1

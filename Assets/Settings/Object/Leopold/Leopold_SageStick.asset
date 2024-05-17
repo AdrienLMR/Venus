@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: b4e3154904b4674468773b546a7a0a78, type: 3}
   objectName: SaltBag
-  txtDescription: "Purifie les lieux maudits et d\xE9sordonn\xE9s. Renverse l\u2019\xE9nergie
-    n\xE9gative"
+  txtDescription: "Purifier les lieux maudits et d\xE9sordonn\xE9s. Renverse l\u2019\xE9nergie
+    n\xE9gative."
   rightObject: 0

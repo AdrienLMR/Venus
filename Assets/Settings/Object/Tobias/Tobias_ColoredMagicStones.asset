@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 0c3dd78981f8c8948b1a5e2acd1e25fc, type: 3}
   objectName: ColoredMagicStones
-  txtDescription: "Pi\xE9ger les poss\xE9d\xE9s dans un cercle de pierre, faute de
+  txtDescription: "Pi\xE8ge les poss\xE9d\xE9s dans un cercle de pierre, faute de
     mieux. "
   rightObject: 0
