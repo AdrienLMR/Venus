@@ -458,7 +458,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Credits
+  m_text: "Cr\xE9dits"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
   m_sharedMaterial: {fileID: 9184671354910977456, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
@@ -2129,7 +2129,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Scientific :'
+  m_text: 'Scientifique :'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
   m_sharedMaterial: {fileID: 9184671354910977456, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}

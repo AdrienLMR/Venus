@@ -263,9 +263,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Should you exorcise
+  m_text: 'Voulez-vous exorciser
 
-    this person ?'
+    cette personne ?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
   m_sharedMaterial: {fileID: 9184671354910977456, guid: 1a355958ce508f141a108a0bfd1b10f9, type: 2}
@@ -903,6 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4253aa0ea4f1fab46bcfa42a4f24d505, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   backgroundImage: {fileID: 7171620406099872399}
   map: {fileID: 0}
   managerSituation2: {fileID: 0}

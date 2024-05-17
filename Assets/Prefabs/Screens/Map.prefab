@@ -469,7 +469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'House
+  m_text: 'Maison
 
 '
   m_isRightToLeft: 0
